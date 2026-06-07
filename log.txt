@@ -1,0 +1,1233 @@
+2026-06-07 15:40:05,360 - INFO - machamp.model.trainer - cmd: train.py --dataset_configs configs/compsyn.json --device -1
+2026-06-07 15:40:05,360 - INFO - machamp.model.trainer - GPU: none, on CPU currently
+2026-06-07 15:40:05,360 - INFO - machamp.model.trainer - Torch version: 2.12.0+cu130
+2026-06-07 15:40:05,360 - INFO - machamp.model.trainer - Transformers version: 4.57.6
+2026-06-07 15:40:05,363 - INFO - machamp.model.trainer - MaChAmp git version 4048c34b37796aa496624b68b3530183dc61a690
+2026-06-07 15:40:05,914 - ERROR - STDERR - 
+2026-06-07 15:40:05,914 - ERROR - STDERR - tokenizer_config.json:   0%|          | 0.00/49.0 [00:00<?, ?B/s]
+2026-06-07 15:40:05,915 - ERROR - STDERR - 
+2026-06-07 15:40:05,915 - ERROR - STDERR - tokenizer_config.json: 100%|██████████| 49.0/49.0 [00:00<00:00, 201kB/s]
+2026-06-07 15:40:06,171 - ERROR - STDERR - 
+2026-06-07 15:40:06,172 - ERROR - STDERR - config.json:   0%|          | 0.00/625 [00:00<?, ?B/s]
+2026-06-07 15:40:06,172 - ERROR - STDERR - 
+2026-06-07 15:40:06,172 - ERROR - STDERR - config.json: 100%|██████████| 625/625 [00:00<00:00, 2.99MB/s]
+2026-06-07 15:40:06,974 - ERROR - STDERR - 
+2026-06-07 15:40:06,974 - ERROR - STDERR - vocab.txt: 0.00B [00:00, ?B/s]
+2026-06-07 15:40:07,075 - ERROR - STDERR - 
+2026-06-07 15:40:07,075 - ERROR - STDERR - vocab.txt: 803kB [00:00, 7.97MB/s]
+2026-06-07 15:40:07,091 - ERROR - STDERR - 
+2026-06-07 15:40:07,091 - ERROR - STDERR - vocab.txt: 996kB [00:00, 8.53MB/s]
+2026-06-07 15:40:07,615 - ERROR - STDERR - 
+2026-06-07 15:40:07,616 - ERROR - STDERR - tokenizer.json: 0.00B [00:00, ?B/s]
+2026-06-07 15:40:07,718 - ERROR - STDERR - 
+2026-06-07 15:40:07,718 - ERROR - STDERR - tokenizer.json: 178kB [00:00, 1.74MB/s]
+2026-06-07 15:40:07,820 - ERROR - STDERR - 
+2026-06-07 15:40:07,820 - ERROR - STDERR - tokenizer.json: 444kB [00:00, 2.25MB/s]
+2026-06-07 15:40:07,921 - ERROR - STDERR - 
+2026-06-07 15:40:07,921 - ERROR - STDERR - tokenizer.json: 1.01MB [00:00, 3.79MB/s]
+2026-06-07 15:40:08,004 - ERROR - STDERR - 
+2026-06-07 15:40:08,004 - ERROR - STDERR - tokenizer.json: 1.96MB [00:00, 5.05MB/s]
+2026-06-07 15:40:08,512 - INFO - machamp.data.machamp_dataset - Reading /home/gusmamitmu@GU.GU.SE/UD_Swedish-Talbanken/sv_talbanken-ud-train.conllu...
+2026-06-07 15:40:25,931 - INFO - machamp.readers.read_sequence - Stats compsyn (/home/gusmamitmu@GU.GU.SE/UD_Swedish-Talbanken/sv_talbanken-ud-train.conllu):
+2026-06-07 15:40:25,932 - INFO - machamp.readers.read_sequence - Lines:      4,315
+2026-06-07 15:40:25,932 - INFO - machamp.readers.read_sequence - Words:      66,646
+2026-06-07 15:40:25,932 - INFO - machamp.readers.read_sequence - Subwords:   112,341
+2026-06-07 15:40:25,993 - INFO - machamp.readers.read_sequence - Unks:       0
+2026-06-07 15:40:25,993 - INFO - machamp.readers.read_sequence - Pre-splits: 0
+2026-06-07 15:40:25,996 - INFO - machamp.data.machamp_dataset - Done reading /home/gusmamitmu@GU.GU.SE/UD_Swedish-Talbanken/sv_talbanken-ud-train.conllu (17.0s)
+
+2026-06-07 15:40:26,944 - INFO - machamp.data.machamp_dataset - Reading /home/gusmamitmu@GU.GU.SE/UD_Swedish-Talbanken/sv_talbanken-ud-dev.conllu...
+2026-06-07 15:40:29,071 - WARNING - machamp.data.machamp_vocabulary - vocative can not be found in namespace dependency. This usually means you have unseen labels in your data during prediction. This will lead to incorrect macro-f1 scores.
+2026-06-07 15:40:29,853 - INFO - machamp.readers.read_sequence - Stats compsyn (/home/gusmamitmu@GU.GU.SE/UD_Swedish-Talbanken/sv_talbanken-ud-dev.conllu):
+2026-06-07 15:40:29,853 - INFO - machamp.readers.read_sequence - Lines:      504
+2026-06-07 15:40:29,853 - INFO - machamp.readers.read_sequence - Words:      9,797
+2026-06-07 15:40:29,853 - INFO - machamp.readers.read_sequence - Subwords:   16,240
+2026-06-07 15:40:29,853 - INFO - machamp.readers.read_sequence - Unks:       0
+2026-06-07 15:40:29,853 - INFO - machamp.readers.read_sequence - Pre-splits: 0
+2026-06-07 15:40:29,853 - INFO - machamp.data.machamp_dataset - Done reading /home/gusmamitmu@GU.GU.SE/UD_Swedish-Talbanken/sv_talbanken-ud-dev.conllu (2.0s)
+
+2026-06-07 15:40:37,231 - ERROR - STDERR - 
+2026-06-07 15:40:37,231 - ERROR - STDERR - model.safetensors:   0%|          | 0.00/714M [00:00<?, ?B/s]
+2026-06-07 15:40:37,467 - ERROR - STDERR - 
+2026-06-07 15:40:37,467 - ERROR - STDERR - model.safetensors:   0%|          | 0.00/714M [00:00<?, ?B/s]
+2026-06-07 15:40:43,216 - ERROR - STDERR - 
+2026-06-07 15:40:43,216 - ERROR - STDERR - model.safetensors:  38%|███▊      | 268M/714M [00:05<00:09, 46.6MB/s]
+2026-06-07 15:40:45,466 - ERROR - STDERR - 
+2026-06-07 15:40:45,466 - ERROR - STDERR - model.safetensors:  47%|████▋     | 335M/714M [00:08<00:09, 40.6MB/s]
+2026-06-07 15:40:45,967 - ERROR - STDERR - 
+2026-06-07 15:40:45,967 - ERROR - STDERR - model.safetensors: 100%|██████████| 714M/714M [00:08<00:00, 114MB/s]
+2026-06-07 15:40:52,008 - ERROR - STDERR - 
+2026-06-07 15:40:52,009 - ERROR - STDERR - model.safetensors: 100%|██████████| 714M/714M [00:14<00:00, 48.3MB/s]
+2026-06-07 15:40:55,173 - INFO - machamp.model.machamp - Overview of the torch model: 
+2026-06-07 15:40:55,173 - INFO - machamp.model.machamp - MachampModel(
+  (mlm): BertModel(
+    (embeddings): BertEmbeddings(
+      (word_embeddings): Embedding(119547, 768, padding_idx=0)
+      (position_embeddings): Embedding(512, 768)
+      (token_type_embeddings): Embedding(2, 768)
+      (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True, bias=True)
+      (dropout): Dropout(p=0.1, inplace=False)
+    )
+    (encoder): BertEncoder(
+      (layer): ModuleList(
+        (0-11): 12 x BertLayer(
+          (attention): BertAttention(
+            (self): BertSdpaSelfAttention(
+              (query): Linear(in_features=768, out_features=768, bias=True)
+              (key): Linear(in_features=768, out_features=768, bias=True)
+              (value): Linear(in_features=768, out_features=768, bias=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+            (output): BertSelfOutput(
+              (dense): Linear(in_features=768, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True, bias=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (intermediate): BertIntermediate(
+            (dense): Linear(in_features=768, out_features=3072, bias=True)
+            (intermediate_act_fn): GELUActivation()
+          )
+          (output): BertOutput(
+            (dense): Linear(in_features=3072, out_features=768, bias=True)
+            (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+          )
+        )
+      )
+    )
+    (pooler): BertPooler(
+      (dense): Linear(in_features=768, out_features=768, bias=True)
+      (activation): Tanh()
+    )
+  )
+  (dropout): Dropout(p=0.2, inplace=False)
+  (decoders): ModuleDict(
+    (dependency): MachampDepDecoder(
+      (head_arc_feedforward): Linear(in_features=768, out_features=768, bias=True)
+      (child_arc_feedforward): Linear(in_features=768, out_features=768, bias=True)
+      (arc_attention): BilinearMatrixAttention()
+      (head_tag_feedforward): Linear(in_features=768, out_features=256, bias=True)
+      (child_tag_feedforward): Linear(in_features=768, out_features=256, bias=True)
+      (tag_bilinear): Bilinear(in1_features=256, in2_features=256, out_features=34, bias=True)
+      (decoder_dropout): Dropout(p=0.0, inplace=False)
+    )
+    (upos): MachampSeqDecoder(
+      (hidden_to_label): Linear(in_features=768, out_features=17, bias=True)
+      (loss_function): CrossEntropyLoss()
+      (decoder_dropout): Dropout(p=0.0, inplace=False)
+    )
+  )
+  (scalars): ModuleDict(
+    (dependency): None
+    (upos): None
+  )
+)
+2026-06-07 15:40:55,227 - INFO - machamp.utils.myutils - Done constructing parameter groups.
+2026-06-07 15:40:55,227 - INFO - machamp.utils.myutils - Group 0: ['mlm.encoder.layer.6.attention.output.dense.bias', 'mlm.encoder.layer.9.output.LayerNorm.bias', 'mlm.encoder.layer.5.attention.self.value.weight', 'mlm.encoder.layer.8.attention.output.LayerNorm.weight', 'mlm.encoder.layer.4.attention.self.query.bias', 'mlm.encoder.layer.10.attention.output.dense.weight', 'mlm.encoder.layer.11.output.LayerNorm.weight', 'mlm.encoder.layer.8.intermediate.dense.bias', 'mlm.encoder.layer.7.output.dense.bias', 'mlm.encoder.layer.5.output.dense.bias', 'mlm.encoder.layer.1.attention.self.query.weight', 'mlm.encoder.layer.5.attention.self.key.bias', 'mlm.encoder.layer.0.output.dense.bias', 'mlm.encoder.layer.4.attention.output.dense.bias', 'mlm.encoder.layer.5.attention.output.LayerNorm.weight', 'mlm.encoder.layer.10.attention.self.key.bias', 'mlm.encoder.layer.2.attention.self.query.bias', 'mlm.encoder.layer.6.output.dense.weight', 'mlm.encoder.layer.6.attention.output.dense.weight', 'mlm.encoder.layer.9.output.LayerNorm.weight', 'mlm.encoder.layer.7.output.dense.weight', 'mlm.encoder.layer.5.attention.self.query.bias', 'mlm.encoder.layer.10.output.dense.bias', 'mlm.encoder.layer.3.intermediate.dense.weight', 'mlm.encoder.layer.2.output.dense.weight', 'mlm.embeddings.word_embeddings.weight', 'mlm.encoder.layer.4.attention.self.key.weight', 'mlm.encoder.layer.2.attention.output.LayerNorm.weight', 'mlm.encoder.layer.6.intermediate.dense.weight', 'mlm.encoder.layer.10.attention.output.LayerNorm.weight', 'mlm.encoder.layer.3.attention.output.dense.weight', 'mlm.encoder.layer.9.attention.output.dense.weight', 'mlm.encoder.layer.2.output.dense.bias', 'mlm.encoder.layer.10.attention.output.dense.bias', 'mlm.encoder.layer.10.output.LayerNorm.weight', 'mlm.encoder.layer.1.intermediate.dense.bias', 'mlm.encoder.layer.4.output.LayerNorm.weight', 'mlm.encoder.layer.8.output.dense.weight', 'mlm.encoder.layer.3.attention.self.value.weight', 'mlm.encoder.layer.8.attention.self.value.bias', 'mlm.encoder.layer.5.attention.self.query.weight', 'mlm.encoder.layer.7.attention.self.value.weight', 'mlm.encoder.layer.11.output.dense.bias', 'mlm.encoder.layer.7.attention.self.key.weight', 'mlm.encoder.layer.3.output.dense.bias', 'mlm.encoder.layer.6.attention.self.value.bias', 'mlm.encoder.layer.2.output.LayerNorm.weight', 'mlm.encoder.layer.3.attention.self.query.bias', 'mlm.encoder.layer.0.attention.output.dense.bias', 'mlm.encoder.layer.10.attention.self.query.bias', 'mlm.encoder.layer.4.attention.output.LayerNorm.bias', 'mlm.embeddings.token_type_embeddings.weight', 'mlm.encoder.layer.4.attention.self.query.weight', 'mlm.encoder.layer.0.intermediate.dense.bias', 'mlm.encoder.layer.6.attention.self.key.bias', 'mlm.encoder.layer.3.attention.self.query.weight', 'mlm.encoder.layer.1.attention.output.dense.bias', 'mlm.encoder.layer.4.intermediate.dense.weight', 'mlm.encoder.layer.0.attention.output.LayerNorm.bias', 'mlm.encoder.layer.7.attention.self.query.weight', 'mlm.encoder.layer.8.attention.self.key.bias', 'mlm.encoder.layer.1.attention.self.key.bias', 'mlm.encoder.layer.6.attention.self.query.weight', 'mlm.encoder.layer.3.attention.output.LayerNorm.bias', 'mlm.encoder.layer.11.output.LayerNorm.bias', 'mlm.encoder.layer.5.output.dense.weight', 'mlm.encoder.layer.3.attention.self.value.bias', 'mlm.encoder.layer.0.attention.self.key.bias', 'mlm.encoder.layer.1.attention.output.dense.weight', 'mlm.encoder.layer.11.attention.self.query.weight', 'mlm.embeddings.LayerNorm.bias', 'mlm.encoder.layer.2.intermediate.dense.bias', 'mlm.encoder.layer.10.attention.self.value.bias', 'mlm.encoder.layer.9.attention.output.dense.bias', 'mlm.encoder.layer.0.attention.self.query.weight', 'mlm.encoder.layer.3.attention.output.LayerNorm.weight', 'mlm.encoder.layer.9.attention.self.value.weight', 'mlm.encoder.layer.2.attention.self.key.weight', 'mlm.encoder.layer.11.attention.self.key.weight', 'mlm.encoder.layer.5.output.LayerNorm.weight', 'mlm.encoder.layer.0.output.LayerNorm.bias', 'mlm.encoder.layer.11.attention.self.query.bias', 'mlm.encoder.layer.2.attention.output.dense.bias', 'mlm.encoder.layer.4.intermediate.dense.bias', 'mlm.encoder.layer.11.attention.self.value.weight', 'mlm.encoder.layer.11.attention.output.dense.bias', 'mlm.encoder.layer.9.attention.self.key.bias', 'mlm.encoder.layer.9.intermediate.dense.weight', 'mlm.pooler.dense.bias', 'mlm.encoder.layer.8.attention.output.LayerNorm.bias', 'mlm.encoder.layer.2.attention.self.query.weight', 'mlm.encoder.layer.5.intermediate.dense.bias', 'mlm.encoder.layer.1.attention.self.query.bias', 'mlm.encoder.layer.10.intermediate.dense.bias', 'mlm.encoder.layer.8.output.LayerNorm.bias', 'mlm.embeddings.LayerNorm.weight', 'mlm.encoder.layer.0.attention.self.key.weight', 'mlm.encoder.layer.1.output.LayerNorm.bias', 'mlm.encoder.layer.3.output.dense.weight', 'mlm.encoder.layer.0.intermediate.dense.weight', 'mlm.encoder.layer.11.attention.self.key.bias', 'mlm.encoder.layer.10.attention.self.query.weight', 'mlm.encoder.layer.2.attention.self.value.weight', 'mlm.encoder.layer.3.intermediate.dense.bias', 'mlm.encoder.layer.8.output.dense.bias', 'mlm.encoder.layer.11.attention.output.dense.weight', 'mlm.encoder.layer.10.output.LayerNorm.bias', 'mlm.encoder.layer.5.attention.self.key.weight', 'mlm.encoder.layer.9.attention.self.value.bias', 'mlm.encoder.layer.0.output.dense.weight', 'mlm.encoder.layer.5.attention.output.dense.weight', 'mlm.encoder.layer.9.attention.output.LayerNorm.weight', 'mlm.encoder.layer.0.attention.self.query.bias', 'mlm.encoder.layer.11.attention.self.value.bias', 'mlm.encoder.layer.8.attention.output.dense.weight', 'mlm.encoder.layer.0.attention.output.dense.weight', 'mlm.encoder.layer.8.attention.self.key.weight', 'mlm.encoder.layer.3.output.LayerNorm.bias', 'mlm.encoder.layer.10.attention.self.value.weight', 'mlm.encoder.layer.4.attention.output.dense.weight', 'mlm.encoder.layer.5.intermediate.dense.weight', 'mlm.encoder.layer.1.attention.output.LayerNorm.bias', 'mlm.encoder.layer.7.attention.self.query.bias', 'mlm.encoder.layer.9.attention.self.query.bias', 'mlm.encoder.layer.4.attention.self.key.bias', 'mlm.encoder.layer.7.attention.output.LayerNorm.weight', 'mlm.encoder.layer.9.attention.output.LayerNorm.bias', 'mlm.encoder.layer.6.intermediate.dense.bias', 'mlm.encoder.layer.7.output.LayerNorm.bias', 'mlm.encoder.layer.0.attention.output.LayerNorm.weight', 'mlm.embeddings.position_embeddings.weight', 'mlm.encoder.layer.2.attention.self.value.bias', 'mlm.encoder.layer.4.output.dense.bias', 'mlm.encoder.layer.2.attention.self.key.bias', 'mlm.encoder.layer.6.attention.self.value.weight', 'mlm.encoder.layer.5.attention.output.dense.bias', 'mlm.encoder.layer.1.output.dense.bias', 'mlm.pooler.dense.weight', 'mlm.encoder.layer.8.attention.self.query.bias', 'mlm.encoder.layer.3.attention.self.key.weight', 'mlm.encoder.layer.0.attention.self.value.bias', 'mlm.encoder.layer.1.attention.self.value.bias', 'mlm.encoder.layer.0.attention.self.value.weight', 'mlm.encoder.layer.6.attention.output.LayerNorm.weight', 'mlm.encoder.layer.3.attention.self.key.bias', 'mlm.encoder.layer.7.intermediate.dense.weight', 'mlm.encoder.layer.6.attention.self.query.bias', 'mlm.encoder.layer.11.intermediate.dense.weight', 'mlm.encoder.layer.9.attention.self.key.weight', 'mlm.encoder.layer.6.attention.output.LayerNorm.bias', 'mlm.encoder.layer.7.attention.output.LayerNorm.bias', 'mlm.encoder.layer.10.intermediate.dense.weight', 'mlm.encoder.layer.5.output.LayerNorm.bias', 'mlm.encoder.layer.10.output.dense.weight', 'mlm.encoder.layer.3.output.LayerNorm.weight', 'mlm.encoder.layer.8.attention.self.value.weight', 'mlm.encoder.layer.1.attention.output.LayerNorm.weight', 'mlm.encoder.layer.1.attention.self.key.weight', 'mlm.encoder.layer.1.intermediate.dense.weight', 'mlm.encoder.layer.0.output.LayerNorm.weight', 'mlm.encoder.layer.1.output.LayerNorm.weight', 'mlm.encoder.layer.4.output.dense.weight', 'mlm.encoder.layer.9.output.dense.weight', 'mlm.encoder.layer.6.attention.self.key.weight', 'mlm.encoder.layer.6.output.LayerNorm.bias', 'mlm.encoder.layer.5.attention.output.LayerNorm.bias', 'mlm.encoder.layer.8.output.LayerNorm.weight', 'mlm.encoder.layer.8.attention.output.dense.bias', 'mlm.encoder.layer.4.attention.output.LayerNorm.weight', 'mlm.encoder.layer.5.attention.self.value.bias', 'mlm.encoder.layer.11.intermediate.dense.bias', 'mlm.encoder.layer.7.attention.output.dense.bias', 'mlm.encoder.layer.9.intermediate.dense.bias', 'mlm.encoder.layer.9.output.dense.bias', 'mlm.encoder.layer.1.attention.self.value.weight', 'mlm.encoder.layer.9.attention.self.query.weight', 'mlm.encoder.layer.2.output.LayerNorm.bias', 'mlm.encoder.layer.7.attention.self.key.bias', 'mlm.encoder.layer.4.output.LayerNorm.bias', 'mlm.encoder.layer.7.attention.self.value.bias', 'mlm.encoder.layer.10.attention.self.key.weight', 'mlm.encoder.layer.2.intermediate.dense.weight', 'mlm.encoder.layer.3.attention.output.dense.bias', 'mlm.encoder.layer.4.attention.self.value.bias', 'mlm.encoder.layer.8.attention.self.query.weight', 'mlm.encoder.layer.7.intermediate.dense.bias', 'mlm.encoder.layer.7.output.LayerNorm.weight', 'mlm.encoder.layer.6.output.dense.bias', 'mlm.encoder.layer.11.attention.output.LayerNorm.weight', 'mlm.encoder.layer.4.attention.self.value.weight', 'mlm.encoder.layer.1.output.dense.weight', 'mlm.encoder.layer.2.attention.output.LayerNorm.bias', 'mlm.encoder.layer.7.attention.output.dense.weight', 'mlm.encoder.layer.6.output.LayerNorm.weight', 'mlm.encoder.layer.11.attention.output.LayerNorm.bias', 'mlm.encoder.layer.2.attention.output.dense.weight', 'mlm.encoder.layer.11.output.dense.weight', 'mlm.encoder.layer.10.attention.output.LayerNorm.bias', 'mlm.encoder.layer.8.intermediate.dense.weight'], {}
+2026-06-07 15:40:55,227 - INFO - machamp.utils.myutils - Group 1: ['decoders.dependency.head_tag_feedforward.weight', 'decoders.upos.hidden_to_label.weight', 'decoders.dependency.head_arc_feedforward.weight', 'decoders.dependency.child_tag_feedforward.weight', 'decoders.dependency.tag_bilinear.bias', 'decoders.dependency._head_sentinel', 'decoders.dependency.head_tag_feedforward.bias', 'decoders.dependency.child_arc_feedforward.weight', 'decoders.dependency.arc_attention._bias', 'decoders.upos.hidden_to_label.bias', 'decoders.dependency.head_arc_feedforward.bias', 'decoders.dependency.child_arc_feedforward.bias', 'decoders.dependency.tag_bilinear.weight', 'decoders.dependency.child_tag_feedforward.bias', 'decoders.dependency.arc_attention._weight_matrix'], {}
+2026-06-07 15:40:55,227 - INFO - machamp.utils.myutils - Group 2: [], {}
+2026-06-07 15:40:55,227 - INFO - machamp.utils.myutils - Number of trainable parameters: 182261813
+2026-06-07 15:40:55,228 - INFO - machamp.modules.allennlp.slanted_triangular - Gradual unfreezing. Training only the decoder heads, not the MLM.
+2026-06-07 15:40:55,231 - INFO - machamp.model.trainer - MaChAmp succesfully initialized in 49.0s
+2026-06-07 15:40:55,231 - INFO - machamp.model.trainer - 
+
+          CHAMP!                   %%#/   
+ ###/%(        CHAMP!            ,#//(%%#( 
+#%%/((/(            . , ,       .%%#####%(
+#(/(((###(        ////////%     *//((((((/
+  ,((((//        #%(%#/#%%/          &####
+     ###### *#%%@&((//&@#%&(%%#%%%%#%%####
+     ,####(%%###%#&&&#((&&(((%%%%########(
+       ///((%%%##/%%######((%%%%%%%%((((//
+          %%%%%##((/%(///%%##%%%%%%%##    
+        /%%####%%%%%%#%%#/(%#(((%%%%%&.   
+       &#%/#%%###%%%##%%%((###(//(####(   
+     @&%%#////(########%######((/(////(   
+       #////     ((((##(((((////,         
+                   */(//(((/**,.          
+                  #,**%#%,*,,,*(          
+               /%%%%%/,,,,,(%%%%((        
+              &%%%#(((/*  /(#%%%#(/       
+              %%#(((//     ,((###(/       
+             .%(/(/,         /(###/(      
+              %(((//          (/((///     
+               ((/,             /(//      
+             %%%#((,            &%%%#     
+         /#(#%(/,             /###*##*    
+
+2026-06-07 15:40:55,231 - INFO - machamp.model.trainer - starting training...
+2026-06-07 15:40:55,231 - INFO - machamp.model.trainer - Epoch 1/20: training
+2026-06-07 15:42:48,365 - ERROR - STDERR - /home/gusmamitmu@GU.GU.SE/menv/lib64/python3.12/site-packages/torch/autograd/graph.py:882: UserWarning: CUDA initialization: The NVIDIA driver on your system is too old (found version 12080). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver. (Triggered internally at /pytorch/c10/cuda/CUDAFunctions.cpp:119.)
+2026-06-07 15:42:48,366 - ERROR - STDERR -   return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+2026-06-07 15:48:17,662 - INFO - machamp.modules.allennlp.slanted_triangular - Learning rates for each group: 
+
+2026-06-07 15:48:17,663 - INFO - machamp.modules.allennlp.slanted_triangular - 0: 3.125e-06
+2026-06-07 15:48:17,663 - INFO - machamp.modules.allennlp.slanted_triangular - 1: 3.125e-06
+2026-06-07 15:48:17,663 - INFO - machamp.modules.allennlp.slanted_triangular - 2: 1.1875e-06
+2026-06-07 15:48:17,664 - INFO - machamp.modules.allennlp.slanted_triangular - Gradual unfreezing finished. Training all layers.
+2026-06-07 15:48:17,664 - INFO - machamp.model.trainer - Epoch 1: evaluating on dev
+2026-06-07 15:48:31,798 - INFO - machamp.model.callback - epoch      : 1/20
+2026-06-07 15:48:31,798 - INFO - machamp.model.callback - best_epoch : 1
+2026-06-07 15:48:31,798 - INFO - machamp.model.callback - cur_ram    : 2.1149
+2026-06-07 15:48:31,798 - INFO - machamp.model.callback - time_epoch : 0:07:36
+2026-06-07 15:48:31,798 - INFO - machamp.model.callback - time_total : 0:07:36
+2026-06-07 15:48:31,798 - INFO - machamp.model.callback - 
+2026-06-07 15:48:31,798 - INFO - machamp.model.callback -                train_loss dev_loss train_scores dev_scores 
+2026-06-07 15:48:31,798 - INFO - machamp.model.callback - Best (1)                                                   
+2026-06-07 15:48:31,798 - INFO - machamp.model.callback - dependency_las     5.4697   2.9701       0.1469     0.3436 
+2026-06-07 15:48:31,798 - INFO - machamp.model.callback - upos_accuracy      2.5203   2.2098       0.2092     0.3168 
+2026-06-07 15:48:31,799 - INFO - machamp.model.callback - sum                7.9900   5.1799       0.3561     0.6604 
+2026-06-07 15:48:31,799 - INFO - machamp.model.callback - Epoch 1                                                    
+2026-06-07 15:48:31,799 - INFO - machamp.model.callback - dependency_las     5.4697   2.9701       0.1469     0.3436 
+2026-06-07 15:48:31,799 - INFO - machamp.model.callback - upos_accuracy      2.5203   2.2098       0.2092     0.3168 
+2026-06-07 15:48:31,799 - INFO - machamp.model.callback - sum                7.9900   5.1799       0.3561     0.6604 
+2026-06-07 15:48:38,103 - INFO - machamp.model.callback - 
+                Dev scores (y) over epochs (x)
+┌────────────────────────────────────────────────────────────┐
+││                             [34m▘[0m                             │
+││                                                           │
+││                                                           │ 0.34
+││                                                           │
+││                                                           │
+││                                                           │
+││                                                           │
+││                                                           │
+││                                                           │ 0.33
+││                                                           │
+││                                                           │
+││                                                           │
+││                                                           │
+││                                                           │
+││                                                           │ 0.32
+││                                                           │
+││                             [35m▖[0m                             │
+└────────────────────────────────────────────────────────────┘
+0.0            0.5            1.0            1.5
+                   [34m██[0m dependency   [35m██[0m upos
+2026-06-07 15:48:38,104 - INFO - machamp.model.callback - Performance of 0.6604 within top 1 models, saving to logs/compsyn/2026.06.07_15.40.05/model_1.pt
+2026-06-07 15:49:30,414 - INFO - machamp.model.trainer - Saving training state, so that we can use --resume if needed
+2026-06-07 15:49:30,415 - INFO - machamp.model.trainer - Path: logs/compsyn/2026.06.07_15.40.05/train_state_epoch_1.pt
+2026-06-07 15:49:30,751 - INFO - machamp.model.trainer - 
+2026-06-07 15:49:30,752 - INFO - machamp.model.trainer - Epoch 2/20: training
+2026-06-07 15:56:54,507 - INFO - machamp.modules.allennlp.slanted_triangular - Learning rates for each group: 
+
+2026-06-07 15:56:54,508 - INFO - machamp.modules.allennlp.slanted_triangular - 0: 2.0124437570303713e-05
+2026-06-07 15:56:54,509 - INFO - machamp.modules.allennlp.slanted_triangular - 1: 2.0124437570303713e-05
+2026-06-07 15:56:54,509 - INFO - machamp.modules.allennlp.slanted_triangular - 2: 7.647286276715412e-06
+2026-06-07 15:56:54,509 - INFO - machamp.modules.allennlp.slanted_triangular - Gradual unfreezing finished. Training all layers.
+2026-06-07 15:56:54,509 - INFO - machamp.model.trainer - Epoch 2: evaluating on dev
+2026-06-07 15:57:08,503 - INFO - machamp.model.callback - epoch      : 2/20
+2026-06-07 15:57:08,503 - INFO - machamp.model.callback - best_epoch : 2
+2026-06-07 15:57:08,503 - INFO - machamp.model.callback - cur_ram    : 4.3480
+2026-06-07 15:57:08,503 - INFO - machamp.model.callback - time_epoch : 0:07:37
+2026-06-07 15:57:08,503 - INFO - machamp.model.callback - time_total : 0:16:13
+2026-06-07 15:57:08,503 - INFO - machamp.model.callback - 
+2026-06-07 15:57:08,503 - INFO - machamp.model.callback -                train_loss dev_loss train_scores dev_scores 
+2026-06-07 15:57:08,503 - INFO - machamp.model.callback - Best (2)                                                   
+2026-06-07 15:57:08,503 - INFO - machamp.model.callback - dependency_las     2.6659   1.7963       0.3467     0.5263 
+2026-06-07 15:57:08,503 - INFO - machamp.model.callback - upos_accuracy      2.1280   1.7860       0.3398     0.4996 
+2026-06-07 15:57:08,503 - INFO - machamp.model.callback - sum                4.7939   3.5823       0.6865     1.0259 
+2026-06-07 15:57:08,503 - INFO - machamp.model.callback - Epoch 2                                                    
+2026-06-07 15:57:08,503 - INFO - machamp.model.callback - dependency_las     2.6659   1.7963       0.3467     0.5263 
+2026-06-07 15:57:08,504 - INFO - machamp.model.callback - upos_accuracy      2.1280   1.7860       0.3398     0.4996 
+2026-06-07 15:57:08,504 - INFO - machamp.model.callback - sum                4.7939   3.5823       0.6865     1.0259 
+2026-06-07 15:57:08,514 - INFO - machamp.model.callback - 
+                Dev scores (y) over epochs (x)
+┌────────────────────────────────────────────────────────────┐
+│                                                        [34m▗[0m[34m▄[0m[34m▞[0m[34m▀[0m│
+│                                                    [34m▗[0m[34m▄[0m[34m▞[0m[34m▀[0m[34m▘[0m   │
+│                                                [34m▗[0m[34m▄[0m[34m▞[0m[34m▀[0m[34m▘[0m    [35m▄[0m[35m▄[0m[35m▀[0m│ 0.50
+│                                            [34m▗[0m[34m▄[0m[34m▞[0m[34m▀[0m[34m▘[0m    [35m▄[0m[35m▄[0m[35m▀[0m[35m▀[0m   │
+│                                        [34m▄[0m[34m▄[0m[34m▀[0m[34m▀[0m[34m▘[0m    [35m▄[0m[35m▄[0m[35m▀[0m[35m▀[0m       │
+│                                    [34m▄[0m[34m▄[0m[34m▀[0m[34m▀[0m    [35m▗[0m[35m▄[0m[35m▞[0m[35m▀[0m[35m▀[0m           │
+│                                [34m▄[0m[34m▄[0m[34m▀[0m[34m▀[0m    [35m▗[0m[35m▄[0m[35m▞[0m[35m▀[0m[35m▘[0m               │ 0.45
+│                           [34m▗[0m[34m▄[0m[34m▄[0m[34m▀[0m[34m▀[0m    [35m▗[0m[35m▄[0m[35m▞[0m[35m▀[0m[35m▘[0m                   │
+│                       [34m▗[0m[34m▄[0m[34m▞[0m[34m▀[0m[34m▘[0m    [35m▗[0m[35m▄[0m[35m▞[0m[35m▀[0m[35m▘[0m                       │
+│                   [34m▗[0m[34m▄[0m[34m▞[0m[34m▀[0m[34m▘[0m    [35m▄[0m[35m▄[0m[35m▀[0m[35m▀[0m[35m▘[0m                           │
+│               [34m▗[0m[34m▄[0m[34m▞[0m[34m▀[0m[34m▘[0m    [35m▄[0m[35m▄[0m[35m▀[0m[35m▀[0m                                │ 0.40
+│           [34m▄[0m[34m▄[0m[34m▞[0m[34m▀[0m[34m▘[0m    [35m▄[0m[35m▄[0m[35m▀[0m[35m▀[0m                                    │
+│       [34m▄[0m[34m▄[0m[34m▀[0m[34m▀[0m    [35m▗[0m[35m▄[0m[35m▄[0m[35m▀[0m[35m▀[0m                                        │
+│   [34m▄[0m[34m▄[0m[34m▀[0m[34m▀[0m    [35m▗[0m[35m▄[0m[35m▞[0m[35m▀[0m[35m▘[0m                                            │
+│[34m▄[0m[34m▀[0m[34m▀[0m    [35m▗[0m[35m▄[0m[35m▞[0m[35m▀[0m[35m▘[0m                                                │ 0.35
+│   [35m▗[0m[35m▄[0m[35m▞[0m[35m▀[0m[35m▘[0m                                                    │
+│[35m▄[0m[35m▞[0m[35m▀[0m[35m▘[0m                                                        │
+└────────────────────────────────────────────────────────────┘
+1.0                           1.5                          2.0
+                   [34m██[0m dependency   [35m██[0m upos
+2026-06-07 15:57:08,515 - INFO - machamp.model.callback - Performance of 1.0259 within top 1 models, saving to logs/compsyn/2026.06.07_15.40.05/model_2.pt
+2026-06-07 15:57:15,390 - INFO - machamp.model.callback - Removing old model: logs/compsyn/2026.06.07_15.40.05/model_1.pt
+2026-06-07 15:57:15,397 - INFO - machamp.model.trainer - Saving training state, so that we can use --resume if needed
+2026-06-07 15:57:15,397 - INFO - machamp.model.trainer - Path: logs/compsyn/2026.06.07_15.40.05/train_state_epoch_2.pt
+2026-06-07 15:57:29,142 - INFO - machamp.model.trainer - Removing old training state.
+2026-06-07 15:57:29,142 - INFO - machamp.model.trainer - Path: logs/compsyn/2026.06.07_15.40.05/train_state_epoch_1.pt
+2026-06-07 15:57:29,143 - INFO - machamp.model.trainer - 
+2026-06-07 15:57:29,143 - INFO - machamp.model.trainer - Epoch 3/20: training
+2026-06-07 16:05:31,064 - INFO - machamp.modules.allennlp.slanted_triangular - Learning rates for each group: 
+
+2026-06-07 16:05:31,065 - INFO - machamp.modules.allennlp.slanted_triangular - 0: 3.7123875140607426e-05
+2026-06-07 16:05:31,065 - INFO - machamp.modules.allennlp.slanted_triangular - 1: 3.7123875140607426e-05
+2026-06-07 16:05:31,065 - INFO - machamp.modules.allennlp.slanted_triangular - 2: 1.4107072553430822e-05
+2026-06-07 16:05:31,066 - INFO - machamp.modules.allennlp.slanted_triangular - Gradual unfreezing finished. Training all layers.
+2026-06-07 16:05:31,066 - INFO - machamp.model.trainer - Epoch 3: evaluating on dev
+2026-06-07 16:05:42,635 - INFO - machamp.model.callback - epoch      : 3/20
+2026-06-07 16:05:42,635 - INFO - machamp.model.callback - best_epoch : 3
+2026-06-07 16:05:42,635 - INFO - machamp.model.callback - cur_ram    : 4.3184
+2026-06-07 16:05:42,635 - INFO - machamp.model.callback - time_epoch : 0:08:13
+2026-06-07 16:05:42,635 - INFO - machamp.model.callback - time_total : 0:24:47
+2026-06-07 16:05:42,635 - INFO - machamp.model.callback - 
+2026-06-07 16:05:42,635 - INFO - machamp.model.callback -                train_loss dev_loss train_scores dev_scores 
+2026-06-07 16:05:42,635 - INFO - machamp.model.callback - Best (3)                                                   
+2026-06-07 16:05:42,635 - INFO - machamp.model.callback - dependency_las     1.5649   1.1322       0.5692     0.7182 
+2026-06-07 16:05:42,635 - INFO - machamp.model.callback - upos_accuracy      1.1944   0.5809       0.7555     0.8959 
+2026-06-07 16:05:42,635 - INFO - machamp.model.callback - sum                2.7594   1.7131       1.3248     1.6141 
+2026-06-07 16:05:42,636 - INFO - machamp.model.callback - Epoch 3                                                    
+2026-06-07 16:05:42,636 - INFO - machamp.model.callback - dependency_las     1.5649   1.1322       0.5692     0.7182 
+2026-06-07 16:05:42,636 - INFO - machamp.model.callback - upos_accuracy      1.1944   0.5809       0.7555     0.8959 
+2026-06-07 16:05:42,636 - INFO - machamp.model.callback - sum                2.7594   1.7131       1.3248     1.6141 
+2026-06-07 16:05:42,646 - INFO - machamp.model.callback - 
+                Dev scores (y) over epochs (x)
+┌────────────────────────────────────────────────────────────┐
+│                                                          [35m▄[0m[35m▀[0m│
+│                                                       [35m▄[0m[35m▞[0m[35m▀[0m  │
+│                                                    [35m▗[0m[35m▄[0m[35m▀[0m     │ 0.8
+│                                                  [35m▄[0m[35m▀[0m[35m▘[0m       │
+│                                               [35m▄[0m[35m▞[0m[35m▀[0m          │
+│                                            [35m▗[0m[35m▄[0m[35m▀[0m         [34m▄[0m[34m▄[0m[34m▞[0m[34m▀[0m│
+│                                          [35m▄[0m[35m▞[0m[35m▘[0m     [34m▗[0m[34m▄[0m[34m▄[0m[34m▞[0m[34m▀[0m[34m▀[0m    │
+│                                       [35m▗[0m[35m▞[0m[35m▀[0m   [34m▄[0m[34m▄[0m[34m▄[0m[34m▀[0m[34m▀[0m[34m▘[0m         │
+│                                    [35m▗[0m[35m▄[0m[35m▀[0m[35m▘[0m[34m▄[0m[34m▄[0m[34m▞[0m[34m▀[0m[34m▀[0m               │ 0.6
+│                                  [35m▄[0m[35m▞[0m[35m▘[0m[34m▀[0m[34m▀[0m[34m▘[0m                    │
+│                            [34m▗[0m[34m▄[0m[34m▄[0m[35m▗[0m[35m▞[0m[35m▀[0m                          │
+│                       [34m▄[0m[34m▄[0m[34m▄[0m[34m▀[0m[35m▗[0m[35m▄[0m[35m▄[0m[35m▛[0m[35m▘[0m                            │
+│                 [34m▗[0m[34m▄[0m[34m▄[0m[34m▀[0m[35m▗[0m[35m▄[0m[35m▄[0m[35m▞[0m[35m▀[0m[35m▀[0m[35m▘[0m                                │
+│           [34m▗[0m[34m▄[0m[34m▄[0m[34m▞[0m[34m▀[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▀[0m[35m▀[0m[35m▘[0m                                      │
+│      [34m▄[0m[34m▄[0m[34m▞[0m[34m▀[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▀[0m[35m▀[0m[35m▀[0m                                            │ 0.4
+│[34m▄[0m[34m▄[0m[34m▄[0m[34m▀[0m[35m▗[0m[35m▄[0m[35m▄[0m[35m▞[0m[35m▀[0m[35m▀[0m                                                  │
+│[35m▄[0m[35m▞[0m[35m▀[0m[35m▀[0m[35m▘[0m                                                       │
+└────────────────────────────────────────────────────────────┘
+ 1                             2                            3
+                   [34m██[0m dependency   [35m██[0m upos
+2026-06-07 16:05:42,646 - INFO - machamp.model.callback - Performance of 1.6141 within top 1 models, saving to logs/compsyn/2026.06.07_15.40.05/model_3.pt
+2026-06-07 16:05:49,661 - INFO - machamp.model.callback - Removing old model: logs/compsyn/2026.06.07_15.40.05/model_2.pt
+2026-06-07 16:05:49,671 - INFO - machamp.model.trainer - Saving training state, so that we can use --resume if needed
+2026-06-07 16:05:49,671 - INFO - machamp.model.trainer - Path: logs/compsyn/2026.06.07_15.40.05/train_state_epoch_3.pt
+2026-06-07 16:06:03,234 - INFO - machamp.model.trainer - Removing old training state.
+2026-06-07 16:06:03,235 - INFO - machamp.model.trainer - Path: logs/compsyn/2026.06.07_15.40.05/train_state_epoch_2.pt
+2026-06-07 16:06:03,250 - INFO - machamp.model.trainer - 
+2026-06-07 16:06:03,250 - INFO - machamp.model.trainer - Epoch 4/20: training
+2026-06-07 16:13:44,857 - INFO - machamp.modules.allennlp.slanted_triangular - Learning rates for each group: 
+
+2026-06-07 16:13:44,858 - INFO - machamp.modules.allennlp.slanted_triangular - 0: 5.412331271091113e-05
+2026-06-07 16:13:44,858 - INFO - machamp.modules.allennlp.slanted_triangular - 1: 5.412331271091113e-05
+2026-06-07 16:13:44,858 - INFO - machamp.modules.allennlp.slanted_triangular - 2: 2.056685883014623e-05
+2026-06-07 16:13:44,858 - INFO - machamp.modules.allennlp.slanted_triangular - Gradual unfreezing finished. Training all layers.
+2026-06-07 16:13:44,858 - INFO - machamp.model.trainer - Epoch 4: evaluating on dev
+2026-06-07 16:13:55,012 - INFO - machamp.model.callback - epoch      : 4/20
+2026-06-07 16:13:55,012 - INFO - machamp.model.callback - best_epoch : 4
+2026-06-07 16:13:55,012 - INFO - machamp.model.callback - cur_ram    : 4.3221
+2026-06-07 16:13:55,012 - INFO - machamp.model.callback - time_epoch : 0:07:51
+2026-06-07 16:13:55,012 - INFO - machamp.model.callback - time_total : 0:32:59
+2026-06-07 16:13:55,012 - INFO - machamp.model.callback - 
+2026-06-07 16:13:55,013 - INFO - machamp.model.callback -                train_loss dev_loss train_scores dev_scores 
+2026-06-07 16:13:55,013 - INFO - machamp.model.callback - Best (4)                                                   
+2026-06-07 16:13:55,013 - INFO - machamp.model.callback - dependency_las     0.9961   0.8495       0.7207     0.8028 
+2026-06-07 16:13:55,013 - INFO - machamp.model.callback - upos_accuracy      0.4633   0.2740       0.9113     0.9486 
+2026-06-07 16:13:55,013 - INFO - machamp.model.callback - sum                1.4594   1.1234       1.6320     1.7514 
+2026-06-07 16:13:55,013 - INFO - machamp.model.callback - Epoch 4                                                    
+2026-06-07 16:13:55,013 - INFO - machamp.model.callback - dependency_las     0.9961   0.8495       0.7207     0.8028 
+2026-06-07 16:13:55,013 - INFO - machamp.model.callback - upos_accuracy      0.4633   0.2740       0.9113     0.9486 
+2026-06-07 16:13:55,013 - INFO - machamp.model.callback - sum                1.4594   1.1234       1.6320     1.7514 
+2026-06-07 16:13:55,303 - INFO - machamp.model.callback - 
+                Dev scores (y) over epochs (x)
+┌────────────────────────────────────────────────────────────┐
+│                                                 [35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▞[0m[35m▀[0m[35m▀[0m[35m▀[0m│
+│                                       [35m▄[0m[35m▄[0m[35m▄[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m           │
+│                                     [35m▗[0m[35m▀[0m                     │
+│                                   [35m▗[0m[35m▞[0m[35m▘[0m                      │
+│                                 [35m▗[0m[35m▞[0m[35m▘[0m               [34m▗[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m│ 0.8
+│                               [35m▗[0m[35m▞[0m[35m▘[0m        [34m▗[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▘[0m        │
+│                             [35m▗[0m[35m▞[0m[35m▘[0m     [34m▄[0m[34m▄[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▘[0m                 │
+│                           [35m▗[0m[35m▞[0m[35m▘[0m   [34m▄[0m[34m▄[0m[34m▀[0m[34m▀[0m                       │
+│                          [35m▞[0m[35m▘[0m [34m▄[0m[34m▄[0m[34m▀[0m[34m▀[0m                           │
+│                        [35m▄[0m[35m▀[0m[34m▄[0m[34m▀[0m[34m▀[0m                               │ 0.6
+│                     [34m▄[0m[35m▄[0m[35m▀[0m[34m▀[0m                                   │
+│                 [34m▄[0m[34m▄[0m[34m▀[0m[35m▄[0m[35m▀[0m                                      │
+│             [34m▄[0m[34m▄[0m[34m▀[0m[35m▄[0m[35m▄[0m[35m▀[0m[35m▀[0m                                        │
+│         [34m▄[0m[34m▄[0m[35m▗[0m[35m▄[0m[35m▞[0m[35m▀[0m[35m▀[0m                                            │
+│    [34m▗[0m[34m▄[0m[34m▞[0m[35m▗[0m[35m▄[0m[35m▞[0m[35m▀[0m[35m▘[0m                                                │ 0.4
+│[34m▗[0m[34m▄[0m[34m▞[0m[35m▗[0m[35m▄[0m[35m▞[0m[35m▀[0m[35m▘[0m                                                    │
+│[35m▄[0m[35m▞[0m[35m▀[0m[35m▘[0m                                                        │
+└────────────────────────────────────────────────────────────┘
+ 1                   2                  3                   4
+                   [34m██[0m dependency   [35m██[0m upos
+2026-06-07 16:13:55,304 - INFO - machamp.model.callback - Performance of 1.7514 within top 1 models, saving to logs/compsyn/2026.06.07_15.40.05/model_4.pt
+2026-06-07 16:14:02,156 - INFO - machamp.model.callback - Removing old model: logs/compsyn/2026.06.07_15.40.05/model_3.pt
+2026-06-07 16:14:02,161 - INFO - machamp.model.trainer - Saving training state, so that we can use --resume if needed
+2026-06-07 16:14:02,161 - INFO - machamp.model.trainer - Path: logs/compsyn/2026.06.07_15.40.05/train_state_epoch_4.pt
+2026-06-07 16:14:15,756 - INFO - machamp.model.trainer - Removing old training state.
+2026-06-07 16:14:15,756 - INFO - machamp.model.trainer - Path: logs/compsyn/2026.06.07_15.40.05/train_state_epoch_3.pt
+2026-06-07 16:14:15,764 - INFO - machamp.model.trainer - 
+2026-06-07 16:14:15,764 - INFO - machamp.model.trainer - Epoch 5/20: training
+2026-06-07 16:22:18,055 - INFO - machamp.modules.allennlp.slanted_triangular - Learning rates for each group: 
+
+2026-06-07 16:22:18,056 - INFO - machamp.modules.allennlp.slanted_triangular - 0: 7.112275028121486e-05
+2026-06-07 16:22:18,056 - INFO - machamp.modules.allennlp.slanted_triangular - 1: 7.112275028121486e-05
+2026-06-07 16:22:18,056 - INFO - machamp.modules.allennlp.slanted_triangular - 2: 2.7026645106861646e-05
+2026-06-07 16:22:18,056 - INFO - machamp.modules.allennlp.slanted_triangular - Gradual unfreezing finished. Training all layers.
+2026-06-07 16:22:18,056 - INFO - machamp.model.trainer - Epoch 5: evaluating on dev
+2026-06-07 16:22:30,689 - INFO - machamp.model.callback - epoch      : 5/20
+2026-06-07 16:22:30,690 - INFO - machamp.model.callback - best_epoch : 5
+2026-06-07 16:22:30,690 - INFO - machamp.model.callback - cur_ram    : 4.2800
+2026-06-07 16:22:30,690 - INFO - machamp.model.callback - time_epoch : 0:08:14
+2026-06-07 16:22:30,690 - INFO - machamp.model.callback - time_total : 0:41:35
+2026-06-07 16:22:30,690 - INFO - machamp.model.callback - 
+2026-06-07 16:22:30,690 - INFO - machamp.model.callback -                train_loss dev_loss train_scores dev_scores 
+2026-06-07 16:22:30,690 - INFO - machamp.model.callback - Best (5)                                                   
+2026-06-07 16:22:30,690 - INFO - machamp.model.callback - dependency_las     0.6980   0.7793       0.8026     0.8283 
+2026-06-07 16:22:30,690 - INFO - machamp.model.callback - upos_accuracy      0.2431   0.1689       0.9506     0.9628 
+2026-06-07 16:22:30,690 - INFO - machamp.model.callback - sum                0.9411   0.9482       1.7531     1.7912 
+2026-06-07 16:22:30,690 - INFO - machamp.model.callback - Epoch 5                                                    
+2026-06-07 16:22:30,690 - INFO - machamp.model.callback - dependency_las     0.6980   0.7793       0.8026     0.8283 
+2026-06-07 16:22:30,690 - INFO - machamp.model.callback - upos_accuracy      0.2431   0.1689       0.9506     0.9628 
+2026-06-07 16:22:30,690 - INFO - machamp.model.callback - sum                0.9411   0.9482       1.7531     1.7912 
+2026-06-07 16:22:30,701 - INFO - machamp.model.callback - 
+                Dev scores (y) over epochs (x)
+┌────────────────────────────────────────────────────────────┐
+│                                           [35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m│
+│                                   [35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m                 │
+│                             [35m▗[0m[35m▄[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m                         │
+│                            [35m▗[0m[35m▘[0m                              │
+│                           [35m▗[0m[35m▘[0m                               │
+│                          [35m▗[0m[35m▘[0m                [34m▗[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▞[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m│ 0.8
+│                         [35m▗[0m[35m▘[0m            [34m▗[0m[34m▄[0m[34m▄[0m[34m▀[0m[34m▀[0m[34m▘[0m               │
+│                        [35m▗[0m[35m▘[0m         [34m▄[0m[34m▄[0m[34m▞[0m[34m▀[0m[34m▘[0m                    │
+│                       [35m▗[0m[35m▘[0m     [34m▄[0m[34m▄[0m[34m▞[0m[34m▀[0m[34m▀[0m                         │
+│                      [35m▗[0m[35m▘[0m    [34m▄[0m[34m▀[0m                              │
+│                     [35m▞[0m[35m▘[0m  [34m▗[0m[34m▞[0m[34m▀[0m                                │
+│                    [35m▞[0m  [34m▗[0m[34m▞[0m[34m▘[0m                                  │
+│                   [35m▞[0m [34m▄[0m[34m▞[0m[34m▘[0m                                    │
+│                  [35m▞[0m[34m▄[0m[34m▀[0m                                       │ 0.6
+│                 [35m▞[0m[34m▀[0m                                         │
+│              [34m▗[0m[34m▄[0m[35m▞[0m                                           │
+│            [34m▗[0m[34m▞[0m[35m▗[0m[35m▞[0m                                            │
+└────────────────────────────────────────────────────────────┘
+ 1              2              3             4              5
+                   [34m██[0m dependency   [35m██[0m upos
+2026-06-07 16:22:30,701 - INFO - machamp.model.callback - Performance of 1.7912 within top 1 models, saving to logs/compsyn/2026.06.07_15.40.05/model_5.pt
+2026-06-07 16:22:37,878 - INFO - machamp.model.callback - Removing old model: logs/compsyn/2026.06.07_15.40.05/model_4.pt
+2026-06-07 16:22:37,895 - INFO - machamp.model.trainer - Saving training state, so that we can use --resume if needed
+2026-06-07 16:22:37,895 - INFO - machamp.model.trainer - Path: logs/compsyn/2026.06.07_15.40.05/train_state_epoch_5.pt
+2026-06-07 16:22:51,459 - INFO - machamp.model.trainer - Removing old training state.
+2026-06-07 16:22:51,460 - INFO - machamp.model.trainer - Path: logs/compsyn/2026.06.07_15.40.05/train_state_epoch_4.pt
+2026-06-07 16:22:51,474 - INFO - machamp.model.trainer - 
+2026-06-07 16:22:51,474 - INFO - machamp.model.trainer - Epoch 6/20: training
+2026-06-07 16:30:26,555 - INFO - machamp.modules.allennlp.slanted_triangular - Learning rates for each group: 
+
+2026-06-07 16:30:26,556 - INFO - machamp.modules.allennlp.slanted_triangular - 0: 8.812218785151857e-05
+2026-06-07 16:30:26,556 - INFO - machamp.modules.allennlp.slanted_triangular - 1: 8.812218785151857e-05
+2026-06-07 16:30:26,556 - INFO - machamp.modules.allennlp.slanted_triangular - 2: 3.348643138357706e-05
+2026-06-07 16:30:26,556 - INFO - machamp.modules.allennlp.slanted_triangular - Gradual unfreezing finished. Training all layers.
+2026-06-07 16:30:26,556 - INFO - machamp.model.trainer - Epoch 6: evaluating on dev
+2026-06-07 16:30:39,308 - INFO - machamp.model.callback - epoch      : 6/20
+2026-06-07 16:30:39,309 - INFO - machamp.model.callback - best_epoch : 6
+2026-06-07 16:30:39,309 - INFO - machamp.model.callback - cur_ram    : 4.2801
+2026-06-07 16:30:39,309 - INFO - machamp.model.callback - time_epoch : 0:07:47
+2026-06-07 16:30:39,309 - INFO - machamp.model.callback - time_total : 0:49:44
+2026-06-07 16:30:39,309 - INFO - machamp.model.callback - 
+2026-06-07 16:30:39,309 - INFO - machamp.model.callback -                train_loss dev_loss train_scores dev_scores 
+2026-06-07 16:30:39,309 - INFO - machamp.model.callback - Best (6)                                                   
+2026-06-07 16:30:39,309 - INFO - machamp.model.callback - dependency_las     0.5488   0.7425       0.8422     0.8446 
+2026-06-07 16:30:39,309 - INFO - machamp.model.callback - upos_accuracy      0.1503   0.1326       0.9691     0.9693 
+2026-06-07 16:30:39,309 - INFO - machamp.model.callback - sum                0.6991   0.8751       1.8113     1.8139 
+2026-06-07 16:30:39,309 - INFO - machamp.model.callback - Epoch 6                                                    
+2026-06-07 16:30:39,309 - INFO - machamp.model.callback - dependency_las     0.5488   0.7425       0.8422     0.8446 
+2026-06-07 16:30:39,309 - INFO - machamp.model.callback - upos_accuracy      0.1503   0.1326       0.9691     0.9693 
+2026-06-07 16:30:39,309 - INFO - machamp.model.callback - sum                0.6991   0.8751       1.8113     1.8139 
+2026-06-07 16:30:39,321 - INFO - machamp.model.callback - 
+                Dev scores (y) over epochs (x)
+┌────────────────────────────────────────────────────────────┐
+│                                   [35m▗[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▟[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m│
+│                             [35m▗[0m[35m▄[0m[35m▄[0m[35m▞[0m[35m▀[0m[35m▀[0m[35m▀[0m                        │
+│                        [35m▄[0m[35m▄[0m[35m▞[0m[35m▀[0m[35m▀[0m[35m▘[0m                              │
+│                       [35m▞[0m                                    │
+│                      [35m▞[0m                             [34m▗[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m│
+│                     [35m▗[0m[35m▘[0m              [34m▗[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▘[0m       │
+│                    [35m▗[0m[35m▘[0m          [34m▗[0m[34m▄[0m[34m▞[0m[34m▀[0m[34m▀[0m[34m▘[0m                      │ 0.8
+│                   [35m▗[0m[35m▘[0m       [34m▗[0m[34m▄[0m[34m▞[0m[34m▀[0m[34m▘[0m                           │
+│                   [35m▌[0m    [34m▗[0m[34m▄[0m[34m▞[0m[34m▀[0m[34m▘[0m                               │
+│                  [35m▞[0m   [34m▗[0m[34m▞[0m[34m▘[0m                                   │
+│                 [35m▞[0m  [34m▗[0m[34m▞[0m[34m▘[0m                                     │
+│                [35m▞[0m  [34m▄[0m[34m▘[0m                                       │
+│               [35m▗[0m[35m▘[0m[34m▄[0m[34m▀[0m                                         │
+│              [35m▗[0m[35m▘[0m[34m▞[0m                                           │ 0.6
+│             [35m▗[0m[35m▘[0m[34m▘[0m                                            │
+│            [34m▞[0m[35m▌[0m                                              │
+│          [34m▄[0m[35m▗[0m[35m▞[0m                                               │
+└────────────────────────────────────────────────────────────┘
+ 1           2           3          4           5           6
+                   [34m██[0m dependency   [35m██[0m upos
+2026-06-07 16:30:39,321 - INFO - machamp.model.callback - Performance of 1.8139 within top 1 models, saving to logs/compsyn/2026.06.07_15.40.05/model_6.pt
+2026-06-07 16:30:46,151 - INFO - machamp.model.callback - Removing old model: logs/compsyn/2026.06.07_15.40.05/model_5.pt
+2026-06-07 16:30:46,155 - INFO - machamp.model.trainer - Saving training state, so that we can use --resume if needed
+2026-06-07 16:30:46,155 - INFO - machamp.model.trainer - Path: logs/compsyn/2026.06.07_15.40.05/train_state_epoch_6.pt
+2026-06-07 16:30:59,729 - INFO - machamp.model.trainer - Removing old training state.
+2026-06-07 16:30:59,729 - INFO - machamp.model.trainer - Path: logs/compsyn/2026.06.07_15.40.05/train_state_epoch_5.pt
+2026-06-07 16:30:59,738 - INFO - machamp.model.trainer - 
+2026-06-07 16:30:59,738 - INFO - machamp.model.trainer - Epoch 7/20: training
+2026-06-07 16:38:30,524 - INFO - machamp.modules.allennlp.slanted_triangular - Learning rates for each group: 
+
+2026-06-07 16:38:30,524 - INFO - machamp.modules.allennlp.slanted_triangular - 0: 9.780572289156627e-05
+2026-06-07 16:38:30,525 - INFO - machamp.modules.allennlp.slanted_triangular - 1: 9.780572289156627e-05
+2026-06-07 16:38:30,525 - INFO - machamp.modules.allennlp.slanted_triangular - 2: 3.716617469879518e-05
+2026-06-07 16:38:30,525 - INFO - machamp.modules.allennlp.slanted_triangular - Gradual unfreezing finished. Training all layers.
+2026-06-07 16:38:30,525 - INFO - machamp.model.trainer - Epoch 7: evaluating on dev
+2026-06-07 16:38:40,234 - INFO - machamp.model.callback - epoch      : 7/20
+2026-06-07 16:38:40,235 - INFO - machamp.model.callback - best_epoch : 7
+2026-06-07 16:38:40,235 - INFO - machamp.model.callback - cur_ram    : 4.2814
+2026-06-07 16:38:40,235 - INFO - machamp.model.callback - time_epoch : 0:07:40
+2026-06-07 16:38:40,235 - INFO - machamp.model.callback - time_total : 0:57:45
+2026-06-07 16:38:40,235 - INFO - machamp.model.callback - 
+2026-06-07 16:38:40,235 - INFO - machamp.model.callback -                train_loss dev_loss train_scores dev_scores 
+2026-06-07 16:38:40,236 - INFO - machamp.model.callback - Best (7)                                                   
+2026-06-07 16:38:40,236 - INFO - machamp.model.callback - dependency_las     0.4414   0.6575       0.8685     0.8593 
+2026-06-07 16:38:40,236 - INFO - machamp.model.callback - upos_accuracy      0.1047   0.1174       0.9774     0.9722 
+2026-06-07 16:38:40,236 - INFO - machamp.model.callback - sum                0.5461   0.7749       1.8459     1.8316 
+2026-06-07 16:38:40,236 - INFO - machamp.model.callback - Epoch 7                                                    
+2026-06-07 16:38:40,236 - INFO - machamp.model.callback - dependency_las     0.4414   0.6575       0.8685     0.8593 
+2026-06-07 16:38:40,236 - INFO - machamp.model.callback - upos_accuracy      0.1047   0.1174       0.9774     0.9722 
+2026-06-07 16:38:40,236 - INFO - machamp.model.callback - sum                0.5461   0.7749       1.8459     1.8316 
+2026-06-07 16:38:40,247 - INFO - machamp.model.callback - 
+                Dev scores (y) over epochs (x)
+┌────────────────────────────────────────────────────────────┐
+│                                [35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▞[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m│
+│                         [35m▄[0m[35m▄[0m[35m▄[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m                            │
+│                    [35m▄[0m[35m▄[0m[35m▞[0m[35m▀[0m[35m▀[0m                                   │
+│                   [35m▐[0m                                        │
+│                  [35m▗[0m[35m▘[0m                         [34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m│
+│                  [35m▌[0m             [34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▞[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m               │
+│                 [35m▞[0m         [34m▗[0m[34m▄[0m[34m▀[0m[34m▀[0m[34m▀[0m                            │ 0.8
+│                [35m▗[0m[35m▘[0m      [34m▄[0m[34m▞[0m[34m▀[0m[34m▘[0m                                │
+│               [35m▗[0m[35m▘[0m   [34m▗[0m[34m▄[0m[34m▀[0m[34m▀[0m                                    │
+│               [35m▞[0m   [34m▞[0m[34m▘[0m                                       │
+│              [35m▐[0m  [34m▗[0m[34m▀[0m                                         │
+│             [35m▗[0m[35m▘[0m [34m▞[0m[34m▘[0m                                          │
+│             [35m▌[0m[34m▗[0m[34m▀[0m                                            │
+│            [35m▞[0m[34m▞[0m[34m▘[0m                                             │ 0.6
+│           [35m▐[0m[34m▀[0m                                               │
+│          [35m▗[0m[35m▘[0m                                                │
+│        [34m▗[0m[34m▀[0m[35m▞[0m                                                 │
+└────────────────────────────────────────────────────────────┘
+ 1         2         3         4        5         6         7
+                   [34m██[0m dependency   [35m██[0m upos
+2026-06-07 16:38:40,248 - INFO - machamp.model.callback - Performance of 1.8316 within top 1 models, saving to logs/compsyn/2026.06.07_15.40.05/model_7.pt
+2026-06-07 16:38:47,164 - INFO - machamp.model.callback - Removing old model: logs/compsyn/2026.06.07_15.40.05/model_6.pt
+2026-06-07 16:38:47,172 - INFO - machamp.model.trainer - Saving training state, so that we can use --resume if needed
+2026-06-07 16:38:47,172 - INFO - machamp.model.trainer - Path: logs/compsyn/2026.06.07_15.40.05/train_state_epoch_7.pt
+2026-06-07 16:39:00,769 - INFO - machamp.model.trainer - Removing old training state.
+2026-06-07 16:39:00,770 - INFO - machamp.model.trainer - Path: logs/compsyn/2026.06.07_15.40.05/train_state_epoch_6.pt
+2026-06-07 16:39:00,778 - INFO - machamp.model.trainer - 
+2026-06-07 16:39:00,778 - INFO - machamp.model.trainer - Epoch 8/20: training
+2026-06-07 16:46:45,968 - INFO - machamp.modules.allennlp.slanted_triangular - Learning rates for each group: 
+
+2026-06-07 16:46:45,969 - INFO - machamp.modules.allennlp.slanted_triangular - 0: 9.052259036144578e-05
+2026-06-07 16:46:45,969 - INFO - machamp.modules.allennlp.slanted_triangular - 1: 9.052259036144578e-05
+2026-06-07 16:46:45,969 - INFO - machamp.modules.allennlp.slanted_triangular - 2: 3.43985843373494e-05
+2026-06-07 16:46:45,969 - INFO - machamp.modules.allennlp.slanted_triangular - Gradual unfreezing finished. Training all layers.
+2026-06-07 16:46:45,969 - INFO - machamp.model.trainer - Epoch 8: evaluating on dev
+2026-06-07 16:46:56,825 - INFO - machamp.model.callback - epoch      : 8/20
+2026-06-07 16:46:56,825 - INFO - machamp.model.callback - best_epoch : 8
+2026-06-07 16:46:56,825 - INFO - machamp.model.callback - cur_ram    : 4.2813
+2026-06-07 16:46:56,825 - INFO - machamp.model.callback - time_epoch : 0:07:56
+2026-06-07 16:46:56,825 - INFO - machamp.model.callback - time_total : 1:06:01
+2026-06-07 16:46:56,825 - INFO - machamp.model.callback - 
+2026-06-07 16:46:56,825 - INFO - machamp.model.callback -                train_loss dev_loss train_scores dev_scores 
+2026-06-07 16:46:56,825 - INFO - machamp.model.callback - Best (8)                                                   
+2026-06-07 16:46:56,826 - INFO - machamp.model.callback - dependency_las     0.3446   0.6758       0.8952     0.8619 
+2026-06-07 16:46:56,826 - INFO - machamp.model.callback - upos_accuracy      0.0774   0.1050       0.9826     0.9730 
+2026-06-07 16:46:56,826 - INFO - machamp.model.callback - sum                0.4220   0.7809       1.8778     1.8348 
+2026-06-07 16:46:56,826 - INFO - machamp.model.callback - Epoch 8                                                    
+2026-06-07 16:46:56,826 - INFO - machamp.model.callback - dependency_las     0.3446   0.6758       0.8952     0.8619 
+2026-06-07 16:46:56,826 - INFO - machamp.model.callback - upos_accuracy      0.0774   0.1050       0.9826     0.9730 
+2026-06-07 16:46:56,826 - INFO - machamp.model.callback - sum                0.4220   0.7809       1.8778     1.8348 
+2026-06-07 16:46:56,837 - INFO - machamp.model.callback - 
+                Dev scores (y) over epochs (x)
+┌────────────────────────────────────────────────────────────┐
+│                            [35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m│
+│                     [35m▗[0m[35m▄[0m[35m▄[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m                                │
+│                 [35m▄[0m[35m▄[0m[35m▞[0m[35m▀[0m[35m▘[0m                                      │
+│                [35m▗[0m[35m▘[0m                                          │
+│                [35m▌[0m                      [34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▞[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m│
+│               [35m▐[0m           [34m▗[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▞[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m                     │
+│              [35m▗[0m[35m▘[0m       [34m▗[0m[34m▄[0m[34m▀[0m[34m▀[0m[34m▘[0m                                │ 0.8
+│              [35m▞[0m     [34m▗[0m[34m▄[0m[34m▀[0m[34m▘[0m                                    │
+│             [35m▗[0m[35m▘[0m  [34m▗[0m[34m▄[0m[34m▀[0m[34m▘[0m                                       │
+│             [35m▌[0m  [34m▄[0m[34m▘[0m                                          │
+│            [35m▞[0m  [34m▞[0m                                            │
+│           [35m▗[0m[35m▘[0m[34m▗[0m[34m▞[0m                                             │
+│           [35m▞[0m[34m▗[0m[34m▘[0m                                              │
+│          [35m▐[0m[34m▞[0m[34m▘[0m                                               │ 0.6
+│          [35m▌[0m                                                 │
+│        [34m▗[0m[35m▞[0m                                                  │
+│       [34m▄[0m[35m▗[0m[35m▘[0m                                                  │
+└────────────────────────────────────────────────────────────┘
+         2                4                6                8
+                   [34m██[0m dependency   [35m██[0m upos
+2026-06-07 16:46:56,837 - INFO - machamp.model.callback - Performance of 1.8348 within top 1 models, saving to logs/compsyn/2026.06.07_15.40.05/model_8.pt
+2026-06-07 16:47:03,820 - INFO - machamp.model.callback - Removing old model: logs/compsyn/2026.06.07_15.40.05/model_7.pt
+2026-06-07 16:47:03,825 - INFO - machamp.model.trainer - Saving training state, so that we can use --resume if needed
+2026-06-07 16:47:03,825 - INFO - machamp.model.trainer - Path: logs/compsyn/2026.06.07_15.40.05/train_state_epoch_8.pt
+2026-06-07 16:47:17,414 - INFO - machamp.model.trainer - Removing old training state.
+2026-06-07 16:47:17,414 - INFO - machamp.model.trainer - Path: logs/compsyn/2026.06.07_15.40.05/train_state_epoch_7.pt
+2026-06-07 16:47:17,422 - INFO - machamp.model.trainer - 
+2026-06-07 16:47:17,422 - INFO - machamp.model.trainer - Epoch 9/20: training
+2026-06-07 16:55:07,162 - INFO - machamp.modules.allennlp.slanted_triangular - Learning rates for each group: 
+
+2026-06-07 16:55:07,163 - INFO - machamp.modules.allennlp.slanted_triangular - 0: 8.323945783132531e-05
+2026-06-07 16:55:07,163 - INFO - machamp.modules.allennlp.slanted_triangular - 1: 8.323945783132531e-05
+2026-06-07 16:55:07,163 - INFO - machamp.modules.allennlp.slanted_triangular - 2: 3.163099397590362e-05
+2026-06-07 16:55:07,164 - INFO - machamp.modules.allennlp.slanted_triangular - Gradual unfreezing finished. Training all layers.
+2026-06-07 16:55:07,164 - INFO - machamp.model.trainer - Epoch 9: evaluating on dev
+2026-06-07 16:55:18,400 - INFO - machamp.model.callback - epoch      : 9/20
+2026-06-07 16:55:18,400 - INFO - machamp.model.callback - best_epoch : 9
+2026-06-07 16:55:18,400 - INFO - machamp.model.callback - cur_ram    : 4.2807
+2026-06-07 16:55:18,400 - INFO - machamp.model.callback - time_epoch : 0:08:00
+2026-06-07 16:55:18,400 - INFO - machamp.model.callback - time_total : 1:14:23
+2026-06-07 16:55:18,400 - INFO - machamp.model.callback - 
+2026-06-07 16:55:18,400 - INFO - machamp.model.callback -                train_loss dev_loss train_scores dev_scores 
+2026-06-07 16:55:18,400 - INFO - machamp.model.callback - Best (9)                                                   
+2026-06-07 16:55:18,400 - INFO - machamp.model.callback - dependency_las     0.2764   0.7210       0.9155     0.8654 
+2026-06-07 16:55:18,400 - INFO - machamp.model.callback - upos_accuracy      0.0545   0.0955       0.9877     0.9765 
+2026-06-07 16:55:18,400 - INFO - machamp.model.callback - sum                0.3309   0.8165       1.9032     1.8419 
+2026-06-07 16:55:18,401 - INFO - machamp.model.callback - Epoch 9                                                    
+2026-06-07 16:55:18,401 - INFO - machamp.model.callback - dependency_las     0.2764   0.7210       0.9155     0.8654 
+2026-06-07 16:55:18,401 - INFO - machamp.model.callback - upos_accuracy      0.0545   0.0955       0.9877     0.9765 
+2026-06-07 16:55:18,401 - INFO - machamp.model.callback - sum                0.3309   0.8165       1.9032     1.8419 
+2026-06-07 16:55:18,412 - INFO - machamp.model.callback - 
+                Dev scores (y) over epochs (x)
+┌────────────────────────────────────────────────────────────┐
+│                          [35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m│
+│                   [35m▗[0m[35m▄[0m[35m▞[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m                                  │
+│               [35m▗[0m[35m▄[0m[35m▞[0m[35m▀[0m[35m▘[0m                                        │
+│              [35m▗[0m[35m▘[0m                                            │
+│              [35m▞[0m                    [34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m│
+│             [35m▐[0m           [34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m                         │
+│             [35m▌[0m      [34m▗[0m[34m▄[0m[34m▀[0m[34m▀[0m[34m▀[0m                                   │ 0.8
+│            [35m▐[0m     [34m▄[0m[34m▞[0m[34m▘[0m                                       │
+│            [35m▌[0m  [34m▗[0m[34m▄[0m[34m▀[0m                                          │
+│           [35m▐[0m  [34m▗[0m[34m▘[0m                                            │
+│          [35m▗[0m[35m▘[0m [34m▞[0m[34m▘[0m                                             │
+│          [35m▞[0m [34m▞[0m                                               │
+│         [35m▗[0m[35m▘[0m[34m▞[0m                                                │
+│         [35m▞[0m[34m▞[0m                                                 │ 0.6
+│        [35m▗[0m[35m▘[0m                                                  │
+│       [34m▗[0m[35m▞[0m                                                   │
+│      [34m▗[0m[35m▗[0m[35m▘[0m                                                   │
+└────────────────────────────────────────────────────────────┘
+        2              4              6              8
+                   [34m██[0m dependency   [35m██[0m upos
+2026-06-07 16:55:18,412 - INFO - machamp.model.callback - Performance of 1.8419 within top 1 models, saving to logs/compsyn/2026.06.07_15.40.05/model_9.pt
+2026-06-07 16:55:25,235 - INFO - machamp.model.callback - Removing old model: logs/compsyn/2026.06.07_15.40.05/model_8.pt
+2026-06-07 16:55:25,240 - INFO - machamp.model.trainer - Saving training state, so that we can use --resume if needed
+2026-06-07 16:55:25,241 - INFO - machamp.model.trainer - Path: logs/compsyn/2026.06.07_15.40.05/train_state_epoch_9.pt
+2026-06-07 16:55:38,813 - INFO - machamp.model.trainer - Removing old training state.
+2026-06-07 16:55:38,813 - INFO - machamp.model.trainer - Path: logs/compsyn/2026.06.07_15.40.05/train_state_epoch_8.pt
+2026-06-07 16:55:38,820 - INFO - machamp.model.trainer - 
+2026-06-07 16:55:38,820 - INFO - machamp.model.trainer - Epoch 10/20: training
+2026-06-07 17:03:12,367 - INFO - machamp.modules.allennlp.slanted_triangular - Learning rates for each group: 
+
+2026-06-07 17:03:12,368 - INFO - machamp.modules.allennlp.slanted_triangular - 0: 7.595632530120483e-05
+2026-06-07 17:03:12,368 - INFO - machamp.modules.allennlp.slanted_triangular - 1: 7.595632530120483e-05
+2026-06-07 17:03:12,368 - INFO - machamp.modules.allennlp.slanted_triangular - 2: 2.8863403614457833e-05
+2026-06-07 17:03:12,368 - INFO - machamp.modules.allennlp.slanted_triangular - Gradual unfreezing finished. Training all layers.
+2026-06-07 17:03:12,368 - INFO - machamp.model.trainer - Epoch 10: evaluating on dev
+2026-06-07 17:03:22,005 - INFO - machamp.model.callback - epoch      : 10/20
+2026-06-07 17:03:22,005 - INFO - machamp.model.callback - best_epoch : 10
+2026-06-07 17:03:22,005 - INFO - machamp.model.callback - cur_ram    : 4.2813
+2026-06-07 17:03:22,006 - INFO - machamp.model.callback - time_epoch : 0:07:43
+2026-06-07 17:03:22,006 - INFO - machamp.model.callback - time_total : 1:22:26
+2026-06-07 17:03:22,006 - INFO - machamp.model.callback - 
+2026-06-07 17:03:22,006 - INFO - machamp.model.callback -                train_loss dev_loss train_scores dev_scores 
+2026-06-07 17:03:22,006 - INFO - machamp.model.callback - Best (10)                                                  
+2026-06-07 17:03:22,006 - INFO - machamp.model.callback - dependency_las     0.2521   0.6736       0.9250     0.8672 
+2026-06-07 17:03:22,006 - INFO - machamp.model.callback - upos_accuracy      0.0476   0.0952       0.9892     0.9773 
+2026-06-07 17:03:22,007 - INFO - machamp.model.callback - sum                0.2997   0.7688       1.9142     1.8445 
+2026-06-07 17:03:22,007 - INFO - machamp.model.callback - Epoch 10                                                   
+2026-06-07 17:03:22,007 - INFO - machamp.model.callback - dependency_las     0.2521   0.6736       0.9250     0.8672 
+2026-06-07 17:03:22,007 - INFO - machamp.model.callback - upos_accuracy      0.0476   0.0952       0.9892     0.9773 
+2026-06-07 17:03:22,007 - INFO - machamp.model.callback - sum                0.2997   0.7688       1.9142     1.8445 
+2026-06-07 17:03:22,019 - INFO - machamp.model.callback - 
+                Dev scores (y) over epochs (x)
+┌────────────────────────────────────────────────────────────┐
+│                       [35m▗[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▞[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m│
+│                 [35m▗[0m[35m▄[0m[35m▞[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▘[0m                                    │
+│              [35m▄[0m[35m▞[0m[35m▀[0m[35m▘[0m                                          │
+│             [35m▛[0m                                              │
+│            [35m▐[0m                  [34m▗[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m│
+│            [35m▌[0m         [34m▗[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▘[0m                            │
+│           [35m▐[0m      [34m▗[0m[34m▞[0m[34m▀[0m[34m▀[0m[34m▘[0m                                     │ 0.8
+│           [35m▌[0m    [34m▄[0m[34m▞[0m[34m▘[0m                                         │
+│          [35m▗[0m[35m▘[0m  [34m▄[0m[34m▀[0m                                            │
+│          [35m▞[0m [34m▗[0m[34m▀[0m                                              │
+│         [35m▗[0m[35m▘[0m[34m▗[0m[34m▘[0m                                               │
+│         [35m▞[0m[34m▗[0m[34m▘[0m                                                │
+│        [35m▗[0m[35m▘[0m[34m▘[0m                                                 │
+│        [35m▞[0m[34m▘[0m                                                  │ 0.6
+│       [35m▗[0m[35m▘[0m                                                   │
+│      [34m▗[0m[35m▞[0m                                                    │
+│     [34m▗[0m[35m▗[0m[35m▘[0m                                                    │
+└────────────────────────────────────────────────────────────┘
+       2             4            6            8           10
+                   [34m██[0m dependency   [35m██[0m upos
+2026-06-07 17:03:22,019 - INFO - machamp.model.callback - Performance of 1.8445 within top 1 models, saving to logs/compsyn/2026.06.07_15.40.05/model_10.pt
+2026-06-07 17:03:28,881 - INFO - machamp.model.callback - Removing old model: logs/compsyn/2026.06.07_15.40.05/model_9.pt
+2026-06-07 17:03:28,887 - INFO - machamp.model.trainer - Saving training state, so that we can use --resume if needed
+2026-06-07 17:03:28,887 - INFO - machamp.model.trainer - Path: logs/compsyn/2026.06.07_15.40.05/train_state_epoch_10.pt
+2026-06-07 17:03:42,450 - INFO - machamp.model.trainer - Removing old training state.
+2026-06-07 17:03:42,450 - INFO - machamp.model.trainer - Path: logs/compsyn/2026.06.07_15.40.05/train_state_epoch_9.pt
+2026-06-07 17:03:42,464 - INFO - machamp.model.trainer - 
+2026-06-07 17:03:42,464 - INFO - machamp.model.trainer - Epoch 11/20: training
+2026-06-07 17:11:18,060 - INFO - machamp.modules.allennlp.slanted_triangular - Learning rates for each group: 
+
+2026-06-07 17:11:18,061 - INFO - machamp.modules.allennlp.slanted_triangular - 0: 6.867319277108434e-05
+2026-06-07 17:11:18,061 - INFO - machamp.modules.allennlp.slanted_triangular - 1: 6.867319277108434e-05
+2026-06-07 17:11:18,061 - INFO - machamp.modules.allennlp.slanted_triangular - 2: 2.609581325301205e-05
+2026-06-07 17:11:18,061 - INFO - machamp.modules.allennlp.slanted_triangular - Gradual unfreezing finished. Training all layers.
+2026-06-07 17:11:18,062 - INFO - machamp.model.trainer - Epoch 11: evaluating on dev
+2026-06-07 17:11:30,036 - INFO - machamp.model.callback - epoch      : 11/20
+2026-06-07 17:11:30,036 - INFO - machamp.model.callback - best_epoch : 11
+2026-06-07 17:11:30,036 - INFO - machamp.model.callback - cur_ram    : 4.3246
+2026-06-07 17:11:30,036 - INFO - machamp.model.callback - time_epoch : 0:07:47
+2026-06-07 17:11:30,036 - INFO - machamp.model.callback - time_total : 1:30:34
+2026-06-07 17:11:30,036 - INFO - machamp.model.callback - 
+2026-06-07 17:11:30,036 - INFO - machamp.model.callback -                train_loss dev_loss train_scores dev_scores 
+2026-06-07 17:11:30,036 - INFO - machamp.model.callback - Best (11)                                                  
+2026-06-07 17:11:30,037 - INFO - machamp.model.callback - dependency_las     0.1888   0.7586       0.9396     0.8768 
+2026-06-07 17:11:30,037 - INFO - machamp.model.callback - upos_accuracy      0.0359   0.0961       0.9919     0.9773 
+2026-06-07 17:11:30,037 - INFO - machamp.model.callback - sum                0.2246   0.8547       1.9315     1.8541 
+2026-06-07 17:11:30,037 - INFO - machamp.model.callback - Epoch 11                                                   
+2026-06-07 17:11:30,037 - INFO - machamp.model.callback - dependency_las     0.1888   0.7586       0.9396     0.8768 
+2026-06-07 17:11:30,037 - INFO - machamp.model.callback - upos_accuracy      0.0359   0.0961       0.9919     0.9773 
+2026-06-07 17:11:30,037 - INFO - machamp.model.callback - sum                0.2246   0.8547       1.9315     1.8541 
+2026-06-07 17:11:30,046 - INFO - machamp.model.callback - 
+                Dev scores (y) over epochs (x)
+┌────────────────────────────────────────────────────────────┐
+│                     [35m▗[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m│
+│               [35m▗[0m[35m▄[0m[35m▞[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▘[0m                                      │
+│            [35m▗[0m[35m▄[0m[35m▀[0m[35m▘[0m                                            │
+│           [35m▗[0m[35m▘[0m                                          [34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m│
+│           [35m▞[0m                [34m▗[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m     │
+│           [35m▌[0m        [34m▄[0m[34m▄[0m[34m▄[0m[34m▞[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▘[0m                               │
+│          [35m▐[0m     [34m▗[0m[34m▞[0m[34m▀[0m[34m▀[0m                                        │ 0.8
+│          [35m▌[0m   [34m▗[0m[34m▞[0m[34m▘[0m                                           │
+│         [35m▐[0m  [34m▗[0m[34m▞[0m[34m▘[0m                                             │
+│         [35m▞[0m [34m▗[0m[34m▘[0m                                               │
+│        [35m▗[0m[35m▘[0m[34m▗[0m[34m▘[0m                                                │
+│        [35m▞[0m[34m▗[0m[34m▘[0m                                                 │
+│       [35m▗[0m[35m▘[0m[34m▌[0m                                                  │
+│       [35m▐[0m[34m▞[0m                                                   │ 0.6
+│       [35m▌[0m                                                    │
+│      [35m▐[0m                                                     │
+│     [34m▞[0m[35m▌[0m                                                     │
+└────────────────────────────────────────────────────────────┘
+       2           4           6          8          10
+                   [34m██[0m dependency   [35m██[0m upos
+2026-06-07 17:11:30,046 - INFO - machamp.model.callback - Performance of 1.8541 within top 1 models, saving to logs/compsyn/2026.06.07_15.40.05/model_11.pt
+2026-06-07 17:11:37,046 - INFO - machamp.model.callback - Removing old model: logs/compsyn/2026.06.07_15.40.05/model_10.pt
+2026-06-07 17:11:37,054 - INFO - machamp.model.trainer - Saving training state, so that we can use --resume if needed
+2026-06-07 17:11:37,054 - INFO - machamp.model.trainer - Path: logs/compsyn/2026.06.07_15.40.05/train_state_epoch_11.pt
+2026-06-07 17:11:50,628 - INFO - machamp.model.trainer - Removing old training state.
+2026-06-07 17:11:50,628 - INFO - machamp.model.trainer - Path: logs/compsyn/2026.06.07_15.40.05/train_state_epoch_10.pt
+2026-06-07 17:11:50,636 - INFO - machamp.model.trainer - 
+2026-06-07 17:11:50,636 - INFO - machamp.model.trainer - Epoch 12/20: training
+2026-06-07 17:19:44,433 - INFO - machamp.modules.allennlp.slanted_triangular - Learning rates for each group: 
+
+2026-06-07 17:19:44,433 - INFO - machamp.modules.allennlp.slanted_triangular - 0: 6.139006024096386e-05
+2026-06-07 17:19:44,433 - INFO - machamp.modules.allennlp.slanted_triangular - 1: 6.139006024096386e-05
+2026-06-07 17:19:44,433 - INFO - machamp.modules.allennlp.slanted_triangular - 2: 2.332822289156627e-05
+2026-06-07 17:19:44,434 - INFO - machamp.modules.allennlp.slanted_triangular - Gradual unfreezing finished. Training all layers.
+2026-06-07 17:19:44,434 - INFO - machamp.model.trainer - Epoch 12: evaluating on dev
+2026-06-07 17:19:53,977 - INFO - machamp.model.callback - epoch      : 12/20
+2026-06-07 17:19:53,978 - INFO - machamp.model.callback - best_epoch : 11
+2026-06-07 17:19:53,978 - INFO - machamp.model.callback - cur_ram    : 4.2817
+2026-06-07 17:19:53,978 - INFO - machamp.model.callback - time_epoch : 0:08:03
+2026-06-07 17:19:53,978 - INFO - machamp.model.callback - time_total : 1:38:58
+2026-06-07 17:19:53,978 - INFO - machamp.model.callback - 
+2026-06-07 17:19:53,978 - INFO - machamp.model.callback -                train_loss dev_loss train_scores dev_scores 
+2026-06-07 17:19:53,978 - INFO - machamp.model.callback - Best (11)                                                  
+2026-06-07 17:19:53,978 - INFO - machamp.model.callback - dependency_las     0.1888   0.7586       0.9396     0.8768 
+2026-06-07 17:19:53,978 - INFO - machamp.model.callback - upos_accuracy      0.0359   0.0961       0.9919     0.9773 
+2026-06-07 17:19:53,978 - INFO - machamp.model.callback - sum                0.2246   0.8547       1.9315     1.8541 
+2026-06-07 17:19:53,978 - INFO - machamp.model.callback - Epoch 12                                                   
+2026-06-07 17:19:53,978 - INFO - machamp.model.callback - dependency_las     0.1451   0.7781       0.9518     0.8734 
+2026-06-07 17:19:53,978 - INFO - machamp.model.callback - upos_accuracy      0.0286   0.0890       0.9933     0.9784 
+2026-06-07 17:19:53,978 - INFO - machamp.model.callback - sum                0.1737   0.8671       1.9451     1.8518 
+2026-06-07 17:19:53,989 - INFO - machamp.model.callback - 
+                Dev scores (y) over epochs (x)
+┌────────────────────────────────────────────────────────────┐
+│                    [35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m│
+│              [35m▗[0m[35m▄[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m                                        │
+│           [35m▗[0m[35m▄[0m[35m▀[0m[35m▘[0m                                             │
+│          [35m▗[0m[35m▘[0m                                      [34m▗[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m│
+│          [35m▞[0m               [34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▞[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▘[0m         │
+│          [35m▌[0m       [34m▗[0m[34m▄[0m[34m▄[0m[34m▞[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m                                  │
+│         [35m▐[0m     [34m▄[0m[34m▀[0m[34m▀[0m[34m▘[0m                                         │ 0.8
+│         [35m▌[0m   [34m▗[0m[34m▞[0m                                             │
+│        [35m▗[0m[35m▘[0m [34m▗[0m[34m▞[0m[34m▘[0m                                              │
+│        [35m▞[0m [34m▗[0m[34m▘[0m                                                │
+│        [35m▌[0m[34m▗[0m[34m▘[0m                                                 │
+│       [35m▐[0m [34m▌[0m                                                  │
+│       [35m▌[0m[34m▞[0m                                                   │
+│      [35m▗[0m[35m▘[0m                                                    │ 0.6
+│      [35m▞[0m[34m▘[0m                                                    │
+│     [34m▗[0m[35m▌[0m                                                     │
+│    [34m▗[0m[35m▐[0m                                                      │
+└────────────────────────────────────────────────────────────┘
+         2            5             8            10
+                   [34m██[0m dependency   [35m██[0m upos
+2026-06-07 17:19:53,989 - INFO - machamp.model.trainer - Saving training state, so that we can use --resume if needed
+2026-06-07 17:19:53,989 - INFO - machamp.model.trainer - Path: logs/compsyn/2026.06.07_15.40.05/train_state_epoch_12.pt
+2026-06-07 17:20:07,548 - INFO - machamp.model.trainer - Removing old training state.
+2026-06-07 17:20:07,548 - INFO - machamp.model.trainer - Path: logs/compsyn/2026.06.07_15.40.05/train_state_epoch_11.pt
+2026-06-07 17:20:07,555 - INFO - machamp.model.trainer - 
+2026-06-07 17:20:07,555 - INFO - machamp.model.trainer - Epoch 13/20: training
+2026-06-07 17:28:51,413 - INFO - machamp.modules.allennlp.slanted_triangular - Learning rates for each group: 
+
+2026-06-07 17:28:51,414 - INFO - machamp.modules.allennlp.slanted_triangular - 0: 5.410692771084338e-05
+2026-06-07 17:28:51,414 - INFO - machamp.modules.allennlp.slanted_triangular - 1: 5.410692771084338e-05
+2026-06-07 17:28:51,414 - INFO - machamp.modules.allennlp.slanted_triangular - 2: 2.0560632530120485e-05
+2026-06-07 17:28:51,414 - INFO - machamp.modules.allennlp.slanted_triangular - Gradual unfreezing finished. Training all layers.
+2026-06-07 17:28:51,414 - INFO - machamp.model.trainer - Epoch 13: evaluating on dev
+2026-06-07 17:29:04,164 - INFO - machamp.model.callback - epoch      : 13/20
+2026-06-07 17:29:04,164 - INFO - machamp.model.callback - best_epoch : 13
+2026-06-07 17:29:04,164 - INFO - machamp.model.callback - cur_ram    : 4.2808
+2026-06-07 17:29:04,164 - INFO - machamp.model.callback - time_epoch : 0:08:56
+2026-06-07 17:29:04,164 - INFO - machamp.model.callback - time_total : 1:48:08
+2026-06-07 17:29:04,164 - INFO - machamp.model.callback - 
+2026-06-07 17:29:04,164 - INFO - machamp.model.callback -                train_loss dev_loss train_scores dev_scores 
+2026-06-07 17:29:04,164 - INFO - machamp.model.callback - Best (13)                                                  
+2026-06-07 17:29:04,164 - INFO - machamp.model.callback - dependency_las     0.1243   0.7927       0.9565     0.8752 
+2026-06-07 17:29:04,165 - INFO - machamp.model.callback - upos_accuracy      0.0231   0.0904       0.9945     0.9801 
+2026-06-07 17:29:04,165 - INFO - machamp.model.callback - sum                0.1474   0.8832       1.9510     1.8553 
+2026-06-07 17:29:04,165 - INFO - machamp.model.callback - Epoch 13                                                   
+2026-06-07 17:29:04,165 - INFO - machamp.model.callback - dependency_las     0.1243   0.7927       0.9565     0.8752 
+2026-06-07 17:29:04,165 - INFO - machamp.model.callback - upos_accuracy      0.0231   0.0904       0.9945     0.9801 
+2026-06-07 17:29:04,165 - INFO - machamp.model.callback - sum                0.1474   0.8832       1.9510     1.8553 
+2026-06-07 17:29:04,312 - INFO - machamp.model.callback - 
+                Dev scores (y) over epochs (x)
+┌────────────────────────────────────────────────────────────┐
+│                  [35m▗[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▞[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m│
+│             [35m▗[0m[35m▄[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▘[0m                                         │
+│          [35m▗[0m[35m▄[0m[35m▀[0m[35m▘[0m                                              │
+│         [35m▗[0m[35m▘[0m                                    [34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m│
+│         [35m▐[0m              [34m▗[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m             │
+│         [35m▌[0m       [34m▄[0m[34m▄[0m[34m▄[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▘[0m                                   │
+│        [35m▗[0m[35m▘[0m    [34m▄[0m[34m▀[0m[34m▀[0m                                           │ 0.8
+│        [35m▐[0m   [34m▗[0m[34m▀[0m                                              │
+│        [35m▌[0m [34m▗[0m[34m▞[0m[34m▘[0m                                               │
+│       [35m▐[0m [34m▗[0m[34m▘[0m                                                 │
+│       [35m▞[0m [34m▌[0m                                                  │
+│       [35m▌[0m[34m▞[0m                                                   │
+│      [35m▐[0m[34m▐[0m                                                    │
+│      [35m▞[0m[34m▘[0m                                                    │ 0.6
+│     [35m▗[0m[35m▘[0m                                                     │
+│     [35m▐[0m                                                      │
+│    [34m▐[0m[35m▌[0m                                                      │
+└────────────────────────────────────────────────────────────┘
+      2         4         6        8        10        12
+                   [34m██[0m dependency   [35m██[0m upos
+2026-06-07 17:29:04,313 - INFO - machamp.model.callback - Performance of 1.8553 within top 1 models, saving to logs/compsyn/2026.06.07_15.40.05/model_13.pt
+2026-06-07 17:29:11,180 - INFO - machamp.model.callback - Removing old model: logs/compsyn/2026.06.07_15.40.05/model_11.pt
+2026-06-07 17:29:11,190 - INFO - machamp.model.trainer - Saving training state, so that we can use --resume if needed
+2026-06-07 17:29:11,191 - INFO - machamp.model.trainer - Path: logs/compsyn/2026.06.07_15.40.05/train_state_epoch_13.pt
+2026-06-07 17:29:24,809 - INFO - machamp.model.trainer - Removing old training state.
+2026-06-07 17:29:24,809 - INFO - machamp.model.trainer - Path: logs/compsyn/2026.06.07_15.40.05/train_state_epoch_12.pt
+2026-06-07 17:29:24,824 - INFO - machamp.model.trainer - 
+2026-06-07 17:29:24,824 - INFO - machamp.model.trainer - Epoch 14/20: training
+2026-06-07 17:37:33,098 - INFO - machamp.modules.allennlp.slanted_triangular - Learning rates for each group: 
+
+2026-06-07 17:37:33,099 - INFO - machamp.modules.allennlp.slanted_triangular - 0: 4.682379518072289e-05
+2026-06-07 17:37:33,099 - INFO - machamp.modules.allennlp.slanted_triangular - 1: 4.682379518072289e-05
+2026-06-07 17:37:33,099 - INFO - machamp.modules.allennlp.slanted_triangular - 2: 1.7793042168674698e-05
+2026-06-07 17:37:33,099 - INFO - machamp.modules.allennlp.slanted_triangular - Gradual unfreezing finished. Training all layers.
+2026-06-07 17:37:33,099 - INFO - machamp.model.trainer - Epoch 14: evaluating on dev
+2026-06-07 17:37:45,128 - INFO - machamp.model.callback - epoch      : 14/20
+2026-06-07 17:37:45,128 - INFO - machamp.model.callback - best_epoch : 14
+2026-06-07 17:37:45,128 - INFO - machamp.model.callback - cur_ram    : 4.2864
+2026-06-07 17:37:45,129 - INFO - machamp.model.callback - time_epoch : 0:08:20
+2026-06-07 17:37:45,129 - INFO - machamp.model.callback - time_total : 1:56:49
+2026-06-07 17:37:45,129 - INFO - machamp.model.callback - 
+2026-06-07 17:37:45,129 - INFO - machamp.model.callback -                train_loss dev_loss train_scores dev_scores 
+2026-06-07 17:37:45,129 - INFO - machamp.model.callback - Best (14)                                                  
+2026-06-07 17:37:45,129 - INFO - machamp.model.callback - dependency_las     0.1024   0.8614       0.9656     0.8758 
+2026-06-07 17:37:45,129 - INFO - machamp.model.callback - upos_accuracy      0.0185   0.0931       0.9953     0.9798 
+2026-06-07 17:37:45,129 - INFO - machamp.model.callback - sum                0.1209   0.9544       1.9609     1.8556 
+2026-06-07 17:37:45,129 - INFO - machamp.model.callback - Epoch 14                                                   
+2026-06-07 17:37:45,129 - INFO - machamp.model.callback - dependency_las     0.1024   0.8614       0.9656     0.8758 
+2026-06-07 17:37:45,129 - INFO - machamp.model.callback - upos_accuracy      0.0185   0.0931       0.9953     0.9798 
+2026-06-07 17:37:45,129 - INFO - machamp.model.callback - sum                0.1209   0.9544       1.9609     1.8556 
+2026-06-07 17:37:45,138 - INFO - machamp.model.callback - 
+                Dev scores (y) over epochs (x)
+┌────────────────────────────────────────────────────────────┐
+│                 [35m▗[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m│
+│            [35m▗[0m[35m▞[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▘[0m                                          │
+│          [35m▄[0m[35m▀[0m[35m▘[0m                                               │
+│         [35m▛[0m                                 [34m▗[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m│
+│        [35m▗[0m[35m▘[0m            [34m▗[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▘[0m                │
+│        [35m▐[0m       [34m▄[0m[34m▄[0m[34m▞[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▘[0m                                     │
+│        [35m▌[0m    [34m▄[0m[34m▀[0m[34m▀[0m                                            │ 0.8
+│       [35m▗[0m[35m▘[0m  [34m▗[0m[34m▀[0m                                               │
+│       [35m▐[0m  [34m▞[0m[34m▘[0m                                                │
+│       [35m▌[0m [34m▛[0m                                                  │
+│      [35m▗[0m[35m▘[0m[34m▞[0m                                                   │
+│      [35m▐[0m[34m▗[0m[34m▘[0m                                                   │
+│      [35m▌[0m[34m▌[0m                                                    │
+│     [35m▗[0m[35m▘[0m                                                     │ 0.6
+│     [35m▐[0m                                                      │
+│    [34m▗[0m[35m▌[0m                                                      │
+│    [35m▗[0m[35m▘[0m                                                      │
+└────────────────────────────────────────────────────────────┘
+       2           5           8         10          12
+                   [34m██[0m dependency   [35m██[0m upos
+2026-06-07 17:37:45,138 - INFO - machamp.model.callback - Performance of 1.8556 within top 1 models, saving to logs/compsyn/2026.06.07_15.40.05/model_14.pt
+2026-06-07 17:37:51,959 - INFO - machamp.model.callback - Removing old model: logs/compsyn/2026.06.07_15.40.05/model_13.pt
+2026-06-07 17:37:51,973 - INFO - machamp.model.trainer - Saving training state, so that we can use --resume if needed
+2026-06-07 17:37:51,973 - INFO - machamp.model.trainer - Path: logs/compsyn/2026.06.07_15.40.05/train_state_epoch_14.pt
+2026-06-07 17:38:05,554 - INFO - machamp.model.trainer - Removing old training state.
+2026-06-07 17:38:05,554 - INFO - machamp.model.trainer - Path: logs/compsyn/2026.06.07_15.40.05/train_state_epoch_13.pt
+2026-06-07 17:38:05,562 - INFO - machamp.model.trainer - 
+2026-06-07 17:38:05,562 - INFO - machamp.model.trainer - Epoch 15/20: training
+2026-06-07 17:46:00,712 - INFO - machamp.modules.allennlp.slanted_triangular - Learning rates for each group: 
+
+2026-06-07 17:46:00,713 - INFO - machamp.modules.allennlp.slanted_triangular - 0: 3.9540662650602404e-05
+2026-06-07 17:46:00,713 - INFO - machamp.modules.allennlp.slanted_triangular - 1: 3.9540662650602404e-05
+2026-06-07 17:46:00,713 - INFO - machamp.modules.allennlp.slanted_triangular - 2: 1.5025451807228914e-05
+2026-06-07 17:46:00,713 - INFO - machamp.modules.allennlp.slanted_triangular - Gradual unfreezing finished. Training all layers.
+2026-06-07 17:46:00,714 - INFO - machamp.model.trainer - Epoch 15: evaluating on dev
+2026-06-07 17:46:12,566 - INFO - machamp.model.callback - epoch      : 15/20
+2026-06-07 17:46:12,566 - INFO - machamp.model.callback - best_epoch : 15
+2026-06-07 17:46:12,566 - INFO - machamp.model.callback - cur_ram    : 4.3518
+2026-06-07 17:46:12,566 - INFO - machamp.model.callback - time_epoch : 0:08:07
+2026-06-07 17:46:12,566 - INFO - machamp.model.callback - time_total : 2:05:17
+2026-06-07 17:46:12,566 - INFO - machamp.model.callback - 
+2026-06-07 17:46:12,566 - INFO - machamp.model.callback -                train_loss dev_loss train_scores dev_scores 
+2026-06-07 17:46:12,566 - INFO - machamp.model.callback - Best (15)                                                  
+2026-06-07 17:46:12,566 - INFO - machamp.model.callback - dependency_las     0.0889   0.8612       0.9704     0.8760 
+2026-06-07 17:46:12,566 - INFO - machamp.model.callback - upos_accuracy      0.0155   0.0917       0.9961     0.9801 
+2026-06-07 17:46:12,566 - INFO - machamp.model.callback - sum                0.1045   0.9529       1.9665     1.8561 
+2026-06-07 17:46:12,566 - INFO - machamp.model.callback - Epoch 15                                                   
+2026-06-07 17:46:12,566 - INFO - machamp.model.callback - dependency_las     0.0889   0.8612       0.9704     0.8760 
+2026-06-07 17:46:12,567 - INFO - machamp.model.callback - upos_accuracy      0.0155   0.0917       0.9961     0.9801 
+2026-06-07 17:46:12,567 - INFO - machamp.model.callback - sum                0.1045   0.9529       1.9665     1.8561 
+2026-06-07 17:46:12,890 - INFO - machamp.model.callback - 
+                Dev scores (y) over epochs (x)
+┌────────────────────────────────────────────────────────────┐
+│                [35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▞[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m│
+│           [35m▗[0m[35m▞[0m[35m▀[0m[35m▀[0m[35m▀[0m                                            │
+│         [35m▄[0m[35m▞[0m[35m▘[0m                                                │
+│        [35m▐[0m                               [34m▗[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m│
+│        [35m▌[0m            [34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▘[0m                   │
+│       [35m▗[0m[35m▘[0m     [34m▗[0m[34m▄[0m[34m▄[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m                                       │
+│       [35m▐[0m    [34m▄[0m[34m▀[0m[34m▘[0m                                             │ 0.8
+│       [35m▞[0m  [34m▗[0m[34m▞[0m                                                │
+│       [35m▌[0m [34m▄[0m[34m▘[0m                                                 │
+│      [35m▐[0m [34m▞[0m                                                   │
+│      [35m▞[0m[34m▗[0m[34m▘[0m                                                   │
+│      [35m▌[0m[34m▞[0m                                                    │
+│     [35m▐[0m[34m▐[0m                                                     │
+│     [35m▞[0m[34m▘[0m                                                     │ 0.6
+│     [35m▌[0m                                                      │
+│    [35m▗[0m[35m▘[0m                                                      │
+│   [34m▗[0m[35m▐[0m                                                       │
+└────────────────────────────────────────────────────────────┘
+                  5                   10                   15
+                   [34m██[0m dependency   [35m██[0m upos
+2026-06-07 17:46:12,890 - INFO - machamp.model.callback - Performance of 1.8561 within top 1 models, saving to logs/compsyn/2026.06.07_15.40.05/model_15.pt
+2026-06-07 17:46:19,753 - INFO - machamp.model.callback - Removing old model: logs/compsyn/2026.06.07_15.40.05/model_14.pt
+2026-06-07 17:46:19,758 - INFO - machamp.model.trainer - Saving training state, so that we can use --resume if needed
+2026-06-07 17:46:19,758 - INFO - machamp.model.trainer - Path: logs/compsyn/2026.06.07_15.40.05/train_state_epoch_15.pt
+2026-06-07 17:46:33,351 - INFO - machamp.model.trainer - Removing old training state.
+2026-06-07 17:46:33,351 - INFO - machamp.model.trainer - Path: logs/compsyn/2026.06.07_15.40.05/train_state_epoch_14.pt
+2026-06-07 17:46:33,360 - INFO - machamp.model.trainer - 
+2026-06-07 17:46:33,360 - INFO - machamp.model.trainer - Epoch 16/20: training
+2026-06-07 17:54:38,682 - INFO - machamp.modules.allennlp.slanted_triangular - Learning rates for each group: 
+
+2026-06-07 17:54:38,683 - INFO - machamp.modules.allennlp.slanted_triangular - 0: 3.2257530120481935e-05
+2026-06-07 17:54:38,683 - INFO - machamp.modules.allennlp.slanted_triangular - 1: 3.2257530120481935e-05
+2026-06-07 17:54:38,683 - INFO - machamp.modules.allennlp.slanted_triangular - 2: 1.2257861445783135e-05
+2026-06-07 17:54:38,683 - INFO - machamp.modules.allennlp.slanted_triangular - Gradual unfreezing finished. Training all layers.
+2026-06-07 17:54:38,684 - INFO - machamp.model.trainer - Epoch 16: evaluating on dev
+2026-06-07 17:54:50,719 - INFO - machamp.model.callback - epoch      : 16/20
+2026-06-07 17:54:50,720 - INFO - machamp.model.callback - best_epoch : 16
+2026-06-07 17:54:50,720 - INFO - machamp.model.callback - cur_ram    : 4.2954
+2026-06-07 17:54:50,720 - INFO - machamp.model.callback - time_epoch : 0:08:17
+2026-06-07 17:54:50,720 - INFO - machamp.model.callback - time_total : 2:13:55
+2026-06-07 17:54:50,720 - INFO - machamp.model.callback - 
+2026-06-07 17:54:50,720 - INFO - machamp.model.callback -                train_loss dev_loss train_scores dev_scores 
+2026-06-07 17:54:50,720 - INFO - machamp.model.callback - Best (16)                                                  
+2026-06-07 17:54:50,720 - INFO - machamp.model.callback - dependency_las     0.0765   0.8324       0.9747     0.8795 
+2026-06-07 17:54:50,720 - INFO - machamp.model.callback - upos_accuracy      0.0144   0.0909       0.9965     0.9804 
+2026-06-07 17:54:50,720 - INFO - machamp.model.callback - sum                0.0908   0.9232       1.9712     1.8599 
+2026-06-07 17:54:50,720 - INFO - machamp.model.callback - Epoch 16                                                   
+2026-06-07 17:54:50,720 - INFO - machamp.model.callback - dependency_las     0.0765   0.8324       0.9747     0.8795 
+2026-06-07 17:54:50,720 - INFO - machamp.model.callback - upos_accuracy      0.0144   0.0909       0.9965     0.9804 
+2026-06-07 17:54:50,720 - INFO - machamp.model.callback - sum                0.0908   0.9232       1.9712     1.8599 
+2026-06-07 17:54:50,743 - INFO - machamp.model.callback - 
+                Dev scores (y) over epochs (x)
+┌────────────────────────────────────────────────────────────┐
+│               [35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m│
+│           [35m▄[0m[35m▀[0m[35m▀[0m[35m▀[0m                                             │
+│        [35m▗[0m[35m▞[0m[35m▀[0m                                                 │
+│        [35m▌[0m                             [34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m│
+│       [35m▐[0m           [34m▗[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▞[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m                      │
+│       [35m▞[0m      [34m▄[0m[34m▄[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▘[0m                                        │
+│       [35m▌[0m   [34m▗[0m[34m▀[0m[34m▀[0m                                              │ 0.8
+│      [35m▗[0m[35m▘[0m  [34m▞[0m[34m▘[0m                                                │
+│      [35m▐[0m [34m▗[0m[34m▞[0m                                                  │
+│      [35m▌[0m[34m▗[0m[34m▘[0m                                                   │
+│      [35m▌[0m[34m▞[0m                                                    │
+│     [35m▐[0m[34m▗[0m[34m▘[0m                                                    │
+│     [35m▞[0m[34m▌[0m                                                     │
+│     [35m▌[0m                                                      │ 0.6
+│    [35m▐[0m[34m▘[0m                                                      │
+│    [35m▐[0m                                                       │
+│   [34m▗[0m[35m▌[0m                                                       │
+└────────────────────────────────────────────────────────────┘
+                 5                 10                  15
+                   [34m██[0m dependency   [35m██[0m upos
+2026-06-07 17:54:50,743 - INFO - machamp.model.callback - Performance of 1.8599 within top 1 models, saving to logs/compsyn/2026.06.07_15.40.05/model_16.pt
+2026-06-07 17:54:57,678 - INFO - machamp.model.callback - Removing old model: logs/compsyn/2026.06.07_15.40.05/model_15.pt
+2026-06-07 17:54:57,683 - INFO - machamp.model.trainer - Saving training state, so that we can use --resume if needed
+2026-06-07 17:54:57,683 - INFO - machamp.model.trainer - Path: logs/compsyn/2026.06.07_15.40.05/train_state_epoch_16.pt
+2026-06-07 17:55:11,240 - INFO - machamp.model.trainer - Removing old training state.
+2026-06-07 17:55:11,240 - INFO - machamp.model.trainer - Path: logs/compsyn/2026.06.07_15.40.05/train_state_epoch_15.pt
+2026-06-07 17:55:11,259 - INFO - machamp.model.trainer - 
+2026-06-07 17:55:11,259 - INFO - machamp.model.trainer - Epoch 17/20: training
+2026-06-07 18:03:13,901 - INFO - machamp.modules.allennlp.slanted_triangular - Learning rates for each group: 
+
+2026-06-07 18:03:13,902 - INFO - machamp.modules.allennlp.slanted_triangular - 0: 2.4974397590361447e-05
+2026-06-07 18:03:13,902 - INFO - machamp.modules.allennlp.slanted_triangular - 1: 2.4974397590361447e-05
+2026-06-07 18:03:13,902 - INFO - machamp.modules.allennlp.slanted_triangular - 2: 9.49027108433735e-06
+2026-06-07 18:03:13,902 - INFO - machamp.modules.allennlp.slanted_triangular - Gradual unfreezing finished. Training all layers.
+2026-06-07 18:03:13,902 - INFO - machamp.model.trainer - Epoch 17: evaluating on dev
+2026-06-07 18:03:28,553 - INFO - machamp.model.callback - epoch      : 17/20
+2026-06-07 18:03:28,554 - INFO - machamp.model.callback - best_epoch : 17
+2026-06-07 18:03:28,554 - INFO - machamp.model.callback - cur_ram    : 4.2812
+2026-06-07 18:03:28,554 - INFO - machamp.model.callback - time_epoch : 0:08:17
+2026-06-07 18:03:28,554 - INFO - machamp.model.callback - time_total : 2:22:33
+2026-06-07 18:03:28,554 - INFO - machamp.model.callback - 
+2026-06-07 18:03:28,554 - INFO - machamp.model.callback -                train_loss dev_loss train_scores dev_scores 
+2026-06-07 18:03:28,554 - INFO - machamp.model.callback - Best (17)                                                  
+2026-06-07 18:03:28,554 - INFO - machamp.model.callback - dependency_las     0.0603   0.9575       0.9794     0.8800 
+2026-06-07 18:03:28,554 - INFO - machamp.model.callback - upos_accuracy      0.0119   0.0942       0.9973     0.9809 
+2026-06-07 18:03:28,554 - INFO - machamp.model.callback - sum                0.0722   1.0518       1.9767     1.8609 
+2026-06-07 18:03:28,554 - INFO - machamp.model.callback - Epoch 17                                                   
+2026-06-07 18:03:28,554 - INFO - machamp.model.callback - dependency_las     0.0603   0.9575       0.9794     0.8800 
+2026-06-07 18:03:28,554 - INFO - machamp.model.callback - upos_accuracy      0.0119   0.0942       0.9973     0.9809 
+2026-06-07 18:03:28,554 - INFO - machamp.model.callback - sum                0.0722   1.0518       1.9767     1.8609 
+2026-06-07 18:03:29,557 - INFO - machamp.model.callback - 
+                Dev scores (y) over epochs (x)
+┌────────────────────────────────────────────────────────────┐
+│              [35m▗[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▞[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m│
+│          [35m▄[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▘[0m                                             │
+│        [35m▄[0m[35m▀[0m                                                  │
+│       [35m▐[0m                           [34m▗[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m│
+│       [35m▌[0m          [34m▗[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▘[0m                        │
+│       [35m▌[0m     [34m▄[0m[34m▄[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▘[0m                                         │
+│      [35m▐[0m   [34m▗[0m[34m▛[0m[34m▀[0m                                               │ 0.8
+│      [35m▞[0m  [34m▗[0m[34m▘[0m                                                 │
+│      [35m▌[0m [34m▞[0m[34m▘[0m                                                  │
+│     [35m▗[0m[35m▘[0m[34m▞[0m                                                    │
+│     [35m▐[0m[34m▗[0m[34m▘[0m                                                    │
+│     [35m▞[0m[34m▞[0m                                                     │
+│     [35m▌[0m[34m▘[0m                                                     │
+│    [35m▐[0m[34m▌[0m                                                      │ 0.6
+│    [35m▐[0m                                                       │
+│    [35m▌[0m                                                       │
+│   [34m▞[0m[35m▌[0m                                                       │
+└────────────────────────────────────────────────────────────┘
+                5                10                 15
+                   [34m██[0m dependency   [35m██[0m upos
+2026-06-07 18:03:29,557 - INFO - machamp.model.callback - Performance of 1.8609 within top 1 models, saving to logs/compsyn/2026.06.07_15.40.05/model_17.pt
+2026-06-07 18:03:36,378 - INFO - machamp.model.callback - Removing old model: logs/compsyn/2026.06.07_15.40.05/model_16.pt
+2026-06-07 18:03:36,389 - INFO - machamp.model.trainer - Saving training state, so that we can use --resume if needed
+2026-06-07 18:03:36,389 - INFO - machamp.model.trainer - Path: logs/compsyn/2026.06.07_15.40.05/train_state_epoch_17.pt
+2026-06-07 18:03:49,974 - INFO - machamp.model.trainer - Removing old training state.
+2026-06-07 18:03:49,975 - INFO - machamp.model.trainer - Path: logs/compsyn/2026.06.07_15.40.05/train_state_epoch_16.pt
+2026-06-07 18:03:49,988 - INFO - machamp.model.trainer - 
+2026-06-07 18:03:49,988 - INFO - machamp.model.trainer - Epoch 18/20: training
+2026-06-07 18:12:12,481 - INFO - machamp.modules.allennlp.slanted_triangular - Learning rates for each group: 
+
+2026-06-07 18:12:12,481 - INFO - machamp.modules.allennlp.slanted_triangular - 0: 1.769126506024096e-05
+2026-06-07 18:12:12,481 - INFO - machamp.modules.allennlp.slanted_triangular - 1: 1.769126506024096e-05
+2026-06-07 18:12:12,482 - INFO - machamp.modules.allennlp.slanted_triangular - 2: 6.722680722891565e-06
+2026-06-07 18:12:12,482 - INFO - machamp.modules.allennlp.slanted_triangular - Gradual unfreezing finished. Training all layers.
+2026-06-07 18:12:12,482 - INFO - machamp.model.trainer - Epoch 18: evaluating on dev
+2026-06-07 18:12:23,870 - INFO - machamp.model.callback - epoch      : 18/20
+2026-06-07 18:12:23,870 - INFO - machamp.model.callback - best_epoch : 18
+2026-06-07 18:12:23,870 - INFO - machamp.model.callback - cur_ram    : 4.3163
+2026-06-07 18:12:23,870 - INFO - machamp.model.callback - time_epoch : 0:08:33
+2026-06-07 18:12:23,870 - INFO - machamp.model.callback - time_total : 2:31:28
+2026-06-07 18:12:23,871 - INFO - machamp.model.callback - 
+2026-06-07 18:12:23,871 - INFO - machamp.model.callback -                train_loss dev_loss train_scores dev_scores 
+2026-06-07 18:12:23,871 - INFO - machamp.model.callback - Best (18)                                                  
+2026-06-07 18:12:23,871 - INFO - machamp.model.callback - dependency_las     0.0453   0.9903       0.9833     0.8807 
+2026-06-07 18:12:23,871 - INFO - machamp.model.callback - upos_accuracy      0.0096   0.0953       0.9979     0.9808 
+2026-06-07 18:12:23,871 - INFO - machamp.model.callback - sum                0.0549   1.0856       1.9812     1.8615 
+2026-06-07 18:12:23,871 - INFO - machamp.model.callback - Epoch 18                                                   
+2026-06-07 18:12:23,871 - INFO - machamp.model.callback - dependency_las     0.0453   0.9903       0.9833     0.8807 
+2026-06-07 18:12:23,871 - INFO - machamp.model.callback - upos_accuracy      0.0096   0.0953       0.9979     0.9808 
+2026-06-07 18:12:23,871 - INFO - machamp.model.callback - sum                0.0549   1.0856       1.9812     1.8615 
+2026-06-07 18:12:23,883 - INFO - machamp.model.callback - 
+                Dev scores (y) over epochs (x)
+┌────────────────────────────────────────────────────────────┐
+│             [35m▗[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m│
+│         [35m▗[0m[35m▞[0m[35m▀[0m[35m▀[0m[35m▘[0m                                              │
+│       [35m▗[0m[35m▞[0m[35m▘[0m                                                  │
+│       [35m▌[0m                         [34m▗[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m│
+│      [35m▗[0m[35m▘[0m         [34m▗[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▘[0m                          │
+│      [35m▐[0m     [34m▗[0m[34m▄[0m[34m▛[0m[34m▀[0m[34m▀[0m[34m▘[0m                                          │
+│      [35m▞[0m   [34m▞[0m[34m▀[0m[34m▘[0m                                               │ 0.8
+│      [35m▌[0m  [34m▞[0m                                                  │
+│     [35m▐[0m [34m▗[0m[34m▀[0m                                                   │
+│     [35m▐[0m [34m▌[0m                                                    │
+│     [35m▌[0m[34m▐[0m                                                     │
+│     [35m▌[0m[34m▘[0m                                                     │
+│    [35m▐[0m[34m▞[0m                                                      │
+│    [35m▐[0m[34m▘[0m                                                      │ 0.6
+│    [35m▌[0m                                                       │
+│   [34m▗[0m[35m▌[0m                                                       │
+│   [35m▐[0m                                                        │
+└────────────────────────────────────────────────────────────┘
+               5               10                15
+                   [34m██[0m dependency   [35m██[0m upos
+2026-06-07 18:12:23,883 - INFO - machamp.model.callback - Performance of 1.8615 within top 1 models, saving to logs/compsyn/2026.06.07_15.40.05/model_18.pt
+2026-06-07 18:12:30,745 - INFO - machamp.model.callback - Removing old model: logs/compsyn/2026.06.07_15.40.05/model_17.pt
+2026-06-07 18:12:30,751 - INFO - machamp.model.trainer - Saving training state, so that we can use --resume if needed
+2026-06-07 18:12:30,751 - INFO - machamp.model.trainer - Path: logs/compsyn/2026.06.07_15.40.05/train_state_epoch_18.pt
+2026-06-07 18:12:44,352 - INFO - machamp.model.trainer - Removing old training state.
+2026-06-07 18:12:44,352 - INFO - machamp.model.trainer - Path: logs/compsyn/2026.06.07_15.40.05/train_state_epoch_17.pt
+2026-06-07 18:12:44,360 - INFO - machamp.model.trainer - 
+2026-06-07 18:12:44,360 - INFO - machamp.model.trainer - Epoch 19/20: training
+2026-06-07 18:23:39,900 - INFO - machamp.modules.allennlp.slanted_triangular - Learning rates for each group: 
+
+2026-06-07 18:23:39,901 - INFO - machamp.modules.allennlp.slanted_triangular - 0: 1.0408132530120487e-05
+2026-06-07 18:23:39,901 - INFO - machamp.modules.allennlp.slanted_triangular - 1: 1.0408132530120487e-05
+2026-06-07 18:23:39,901 - INFO - machamp.modules.allennlp.slanted_triangular - 2: 3.955090361445785e-06
+2026-06-07 18:23:39,901 - INFO - machamp.modules.allennlp.slanted_triangular - Gradual unfreezing finished. Training all layers.
+2026-06-07 18:23:39,902 - INFO - machamp.model.trainer - Epoch 19: evaluating on dev
+2026-06-07 18:23:55,228 - INFO - machamp.model.callback - epoch      : 19/20
+2026-06-07 18:23:55,228 - INFO - machamp.model.callback - best_epoch : 19
+2026-06-07 18:23:55,228 - INFO - machamp.model.callback - cur_ram    : 4.4706
+2026-06-07 18:23:55,228 - INFO - machamp.model.callback - time_epoch : 0:11:10
+2026-06-07 18:23:55,228 - INFO - machamp.model.callback - time_total : 2:42:59
+2026-06-07 18:23:55,228 - INFO - machamp.model.callback - 
+2026-06-07 18:23:55,228 - INFO - machamp.model.callback -                train_loss dev_loss train_scores dev_scores 
+2026-06-07 18:23:55,229 - INFO - machamp.model.callback - Best (19)                                                  
+2026-06-07 18:23:55,229 - INFO - machamp.model.callback - dependency_las     0.0443   0.9802       0.9843     0.8822 
+2026-06-07 18:23:55,229 - INFO - machamp.model.callback - upos_accuracy      0.0088   0.0954       0.9977     0.9804 
+2026-06-07 18:23:55,229 - INFO - machamp.model.callback - sum                0.0532   1.0756       1.9820     1.8626 
+2026-06-07 18:23:55,229 - INFO - machamp.model.callback - Epoch 19                                                   
+2026-06-07 18:23:55,229 - INFO - machamp.model.callback - dependency_las     0.0443   0.9802       0.9843     0.8822 
+2026-06-07 18:23:55,229 - INFO - machamp.model.callback - upos_accuracy      0.0088   0.0954       0.9977     0.9804 
+2026-06-07 18:23:55,229 - INFO - machamp.model.callback - sum                0.0532   1.0756       1.9820     1.8626 
+2026-06-07 18:23:55,238 - INFO - machamp.model.callback - 
+                Dev scores (y) over epochs (x)
+┌────────────────────────────────────────────────────────────┐
+│             [35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▞[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m│
+│         [35m▄[0m[35m▀[0m[35m▀[0m[35m▀[0m                                               │
+│       [35m▄[0m[35m▀[0m                                                   │
+│      [35m▐[0m                        [34m▗[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m│
+│      [35m▐[0m         [34m▗[0m[34m▄[0m[34m▄[0m[34m▞[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▘[0m                            │
+│      [35m▌[0m    [34m▗[0m[34m▄[0m[34m▞[0m[34m▀[0m[34m▀[0m[34m▘[0m                                           │
+│      [35m▌[0m  [34m▗[0m[34m▀[0m[34m▘[0m                                                │ 0.8
+│     [35m▐[0m  [34m▗[0m[34m▘[0m                                                  │
+│     [35m▐[0m [34m▄[0m[34m▘[0m                                                   │
+│     [35m▌[0m[34m▐[0m                                                     │
+│     [35m▌[0m[34m▌[0m                                                     │
+│    [35m▐[0m[34m▐[0m                                                      │
+│    [35m▐[0m[34m▌[0m                                                      │
+│    [35m▌[0m                                                       │ 0.6
+│    [35m▌[0m                                                       │
+│   [35m▐[0m                                                        │
+│   [35m▐[0m                                                        │
+└────────────────────────────────────────────────────────────┘
+              5               10              15
+                   [34m██[0m dependency   [35m██[0m upos
+2026-06-07 18:23:55,238 - INFO - machamp.model.callback - Performance of 1.8626 within top 1 models, saving to logs/compsyn/2026.06.07_15.40.05/model_19.pt
+2026-06-07 18:24:02,162 - INFO - machamp.model.callback - Removing old model: logs/compsyn/2026.06.07_15.40.05/model_18.pt
+2026-06-07 18:24:02,167 - INFO - machamp.model.trainer - Saving training state, so that we can use --resume if needed
+2026-06-07 18:24:02,167 - INFO - machamp.model.trainer - Path: logs/compsyn/2026.06.07_15.40.05/train_state_epoch_19.pt
+2026-06-07 18:24:21,857 - INFO - machamp.model.trainer - Removing old training state.
+2026-06-07 18:24:21,857 - INFO - machamp.model.trainer - Path: logs/compsyn/2026.06.07_15.40.05/train_state_epoch_18.pt
+2026-06-07 18:24:21,891 - INFO - machamp.model.trainer - 
+2026-06-07 18:24:21,892 - INFO - machamp.model.trainer - Epoch 20/20: training
+2026-06-07 18:34:49,994 - INFO - machamp.modules.allennlp.slanted_triangular - Learning rates for each group: 
+
+2026-06-07 18:34:49,995 - INFO - machamp.modules.allennlp.slanted_triangular - 0: 3.125e-06
+2026-06-07 18:34:49,995 - INFO - machamp.modules.allennlp.slanted_triangular - 1: 3.125e-06
+2026-06-07 18:34:49,995 - INFO - machamp.modules.allennlp.slanted_triangular - 2: 1.1875e-06
+2026-06-07 18:34:49,995 - INFO - machamp.modules.allennlp.slanted_triangular - Gradual unfreezing finished. Training all layers.
+2026-06-07 18:34:49,996 - INFO - machamp.model.trainer - Epoch 20: evaluating on dev
+2026-06-07 18:35:01,322 - INFO - machamp.model.callback - epoch      : 20/20
+2026-06-07 18:35:01,322 - INFO - machamp.model.callback - best_epoch : 20
+2026-06-07 18:35:01,322 - INFO - machamp.model.callback - cur_ram    : 4.2866
+2026-06-07 18:35:01,322 - INFO - machamp.model.callback - time_epoch : 0:10:39
+2026-06-07 18:35:01,322 - INFO - machamp.model.callback - time_total : 2:54:06
+2026-06-07 18:35:01,322 - INFO - machamp.model.callback - 
+2026-06-07 18:35:01,322 - INFO - machamp.model.callback -                train_loss dev_loss train_scores dev_scores 
+2026-06-07 18:35:01,322 - INFO - machamp.model.callback - Best (20)                                                  
+2026-06-07 18:35:01,322 - INFO - machamp.model.callback - dependency_las     0.0359   1.0115       0.9874     0.8825 
+2026-06-07 18:35:01,322 - INFO - machamp.model.callback - upos_accuracy      0.0093   0.0937       0.9978     0.9806 
+2026-06-07 18:35:01,323 - INFO - machamp.model.callback - sum                0.0452   1.1052       1.9852     1.8631 
+2026-06-07 18:35:01,323 - INFO - machamp.model.callback - Epoch 20                                                   
+2026-06-07 18:35:01,323 - INFO - machamp.model.callback - dependency_las     0.0359   1.0115       0.9874     0.8825 
+2026-06-07 18:35:01,323 - INFO - machamp.model.callback - upos_accuracy      0.0093   0.0937       0.9978     0.9806 
+2026-06-07 18:35:01,323 - INFO - machamp.model.callback - sum                0.0452   1.1052       1.9852     1.8631 
+2026-06-07 18:35:01,626 - INFO - machamp.model.callback - 
+                Dev scores (y) over epochs (x)
+┌────────────────────────────────────────────────────────────┐
+│            [35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▄[0m[35m▞[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m[35m▀[0m│
+│        [35m▗[0m[35m▞[0m[35m▀[0m[35m▀[0m                                                │
+│       [35m▞[0m[35m▘[0m                                                   │
+│      [35m▞[0m                       [34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m[34m▄[0m│
+│      [35m▌[0m        [34m▗[0m[34m▄[0m[34m▄[0m[34m▞[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m[34m▀[0m                              │
+│     [35m▗[0m[35m▘[0m    [34m▄[0m[34m▟[0m[34m▀[0m[34m▀[0m[34m▘[0m                                            │
+│     [35m▐[0m   [34m▞[0m[34m▀[0m                                                 │ 0.8
+│     [35m▐[0m  [34m▞[0m                                                   │
+│     [35m▌[0m [34m▞[0m                                                    │
+│     [35m▌[0m[34m▞[0m                                                     │
+│    [35m▐[0m[34m▗[0m[34m▘[0m                                                     │
+│    [35m▐[0m[34m▞[0m                                                      │
+│    [35m▌[0m[34m▘[0m                                                      │
+│    [35m▌[0m                                                       │ 0.6
+│   [35m▗[0m[35m▘[0m                                                       │
+│   [35m▐[0m                                                        │
+│  [34m▗[0m[35m▞[0m                                                        │
+└────────────────────────────────────────────────────────────┘
+             5              10              15             20
+                   [34m██[0m dependency   [35m██[0m upos
+2026-06-07 18:35:01,627 - INFO - machamp.model.callback - Performance of 1.8631 within top 1 models, saving to logs/compsyn/2026.06.07_15.40.05/model_20.pt
+2026-06-07 18:35:08,489 - INFO - machamp.model.callback - Removing old model: logs/compsyn/2026.06.07_15.40.05/model_19.pt
+2026-06-07 18:35:08,494 - INFO - machamp.model.callback - Best performance obtained in epoch 20 linking model model_20.pt as logs/compsyn/2026.06.07_15.40.05/model.pt.
+2026-06-07 18:35:08,495 - INFO - machamp.model.trainer - Saving training state, so that we can use --resume if needed
+2026-06-07 18:35:08,496 - INFO - machamp.model.trainer - Path: logs/compsyn/2026.06.07_15.40.05/train_state_epoch_20.pt
+2026-06-07 18:35:22,089 - INFO - machamp.model.trainer - Removing old training state.
+2026-06-07 18:35:22,089 - INFO - machamp.model.trainer - Path: logs/compsyn/2026.06.07_15.40.05/train_state_epoch_19.pt
+2026-06-07 18:35:22,097 - INFO - machamp.model.trainer - 
+2026-06-07 18:35:22,112 - INFO - machamp.model.trainer - Predicting on dev set
+2026-06-07 18:35:23,667 - INFO - machamp.data.machamp_dataset - Reading /home/gusmamitmu@GU.GU.SE/UD_Swedish-Talbanken/sv_talbanken-ud-dev.conllu...
+2026-06-07 18:35:24,699 - WARNING - machamp.data.machamp_vocabulary - vocative can not be found in namespace dependency. This usually means you have unseen labels in your data during prediction. This will lead to incorrect macro-f1 scores.
+2026-06-07 18:35:25,436 - INFO - machamp.readers.read_sequence - Stats compsyn (/home/gusmamitmu@GU.GU.SE/UD_Swedish-Talbanken/sv_talbanken-ud-dev.conllu):
+2026-06-07 18:35:25,436 - INFO - machamp.readers.read_sequence - Lines:      504
+2026-06-07 18:35:25,436 - INFO - machamp.readers.read_sequence - Words:      9,797
+2026-06-07 18:35:25,436 - INFO - machamp.readers.read_sequence - Subwords:   16,240
+2026-06-07 18:35:25,437 - INFO - machamp.readers.read_sequence - Unks:       0
+2026-06-07 18:35:25,437 - INFO - machamp.readers.read_sequence - Pre-splits: 0
+2026-06-07 18:35:25,437 - INFO - machamp.data.machamp_dataset - Done reading /home/gusmamitmu@GU.GU.SE/UD_Swedish-Talbanken/sv_talbanken-ud-dev.conllu (1.0s)
+
+2026-06-07 18:36:04,955 - INFO - machamp.utils.myutils - dependency_las : 0.8825
+2026-06-07 18:36:04,955 - INFO - machamp.utils.myutils - upos_accuracy  : 0.9806
+2026-06-07 18:36:04,955 - INFO - machamp.utils.myutils - sum            : 1.8631
+2026-06-07 18:36:04,955 - INFO - machamp.utils.myutils - 
+

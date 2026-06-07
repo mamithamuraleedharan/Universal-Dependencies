@@ -1,0 +1,154 @@
+1	Vem	_	PRON	_	_	0	root	_	_
+2	är	_	AUX	_	_	1	cop	_	_
+3	de	_	PRON	_	_	1	nsubj	_	_
+4	?	_	PUNCT	_	_	1	punct	_	_
+
+1	Jag	_	PRON	_	_	2	nsubj	_	_
+2	bär	_	VERB	_	_	0	root	_	_
+3	dessa	_	DET	_	_	4	det	_	_
+4	tankar	_	NOUN	_	_	2	obj	_	_
+5	i	_	ADP	_	_	6	case	_	_
+6	huvudet	_	NOUN	_	_	2	obl	_	_
+7	.	_	PUNCT	_	_	2	punct	_	_
+
+1	Han	_	PRON	_	_	2	nsubj	_	_
+2	samlade	_	VERB	_	_	0	root	_	_
+3	kort	_	NOUN	_	_	2	obj	_	_
+4	och	_	CCONJ	_	_	5	cc	_	_
+5	bytte	_	VERB	_	_	2	conj	_	_
+6	dem	_	PRON	_	_	5	obj	_	_
+7	med	_	ADP	_	_	10	case	_	_
+8	de	_	DET	_	_	10	det	_	_
+9	andra	_	ADJ	_	_	10	amod	_	_
+10	pojkarna	_	NOUN	_	_	5	obl	_	_
+11	.	_	PUNCT	_	_	2	punct	_	_
+
+1	Nyheten	_	NOUN	_	_	2	nsubj	_	_
+2	fördes	_	VERB	_	_	0	root	_	_
+3	till	_	ADP	_	_	5	case	_	_
+4	varje	_	DET	_	_	5	det	_	_
+5	by	_	NOUN	_	_	2	obl	_	_
+6	.	_	PUNCT	_	_	2	punct	_	_
+
+1	Hon	_	PRON	_	_	5	nsubj	_	_
+2	var	_	AUX	_	_	5	cop	_	_
+3	bara	_	ADV	_	_	5	advmod	_	_
+4	en	_	DET	_	_	5	det	_	_
+5	flicka	_	NOUN	_	_	0	root	_	_
+6	med	_	ADP	_	_	8	case	_	_
+7	smutsiga	_	ADJ	_	_	8	amod	_	_
+8	skor	_	NOUN	_	_	5	nmod	_	_
+9	.	_	PUNCT	_	_	5	punct	_	_
+
+1	Adam	_	PROPN	_	_	4	nsubj	_	_
+2	skulle	_	AUX	_	_	4	aux	_	_
+3	ha	_	AUX	_	_	4	aux	_	_
+4	förts	_	VERB	_	_	0	root	_	_
+5	in	_	ADV	_	_	4	compound	_	_
+6	i	_	ADP	_	_	9	case	_	_
+7	det	_	DET	_	_	9	det	_	_
+8	eviga	_	ADJ	_	_	9	amod	_	_
+9	livet	_	NOUN	_	_	4	obl	_	_
+10	.	_	PUNCT	_	_	4	punct	_	_
+
+1	Hunden	_	NOUN	_	_	2	nsubj	_	_
+2	sover	_	VERB	_	_	0	root	_	_
+3	på	_	ADP	_	_	4	case	_	_
+4	golvet	_	NOUN	_	_	2	obl	_	_
+5	.	_	PUNCT	_	_	2	punct	_	_
+
+1	Barnet	_	NOUN	_	_	0	root	_	_
+2	åt	_	ADP	_	_	4	case	_	_
+3	ett	_	DET	_	_	4	det	_	_
+4	äpple	_	NOUN	_	_	1	obl	_	_
+5	.	_	PUNCT	_	_	1	punct	_	_
+
+1	Hon	_	PRON	_	_	2	nsubj	_	_
+2	läser	_	VERB	_	_	0	root	_	_
+3	en	_	DET	_	_	4	det	_	_
+4	bok	_	NOUN	_	_	2	obj	_	_
+5	varje	_	DET	_	_	6	det	_	_
+6	dag	_	NOUN	_	_	2	obl	_	_
+7	.	_	PUNCT	_	_	2	punct	_	_
+
+1	Vi	_	PRON	_	_	2	nsubj	_	_
+2	bor	_	VERB	_	_	0	root	_	_
+3	i	_	ADP	_	_	6	case	_	_
+4	en	_	DET	_	_	6	det	_	_
+5	liten	_	ADJ	_	_	6	amod	_	_
+6	stad	_	NOUN	_	_	2	obl	_	_
+7	.	_	PUNCT	_	_	2	punct	_	_
+
+1	Han	_	PRON	_	_	4	nsubj	_	_
+2	kan	_	AUX	_	_	4	aux	_	_
+3	inte	_	PART	_	_	4	advmod	_	_
+4	simma	_	VERB	_	_	0	root	_	_
+5	.	_	PUNCT	_	_	4	punct	_	_
+
+1	Katten	_	NOUN	_	_	2	nsubj	_	_
+2	sitter	_	VERB	_	_	0	root	_	_
+3	på	_	ADP	_	_	4	case	_	_
+4	bordet	_	NOUN	_	_	2	obl	_	_
+5	.	_	PUNCT	_	_	2	punct	_	_
+
+1	Flickan	_	NOUN	_	_	2	nsubj	_	_
+2	gav	_	VERB	_	_	0	root	_	_
+3	pojken	_	NOUN	_	_	2	iobj	_	_
+4	en	_	DET	_	_	5	det	_	_
+5	blomma	_	NOUN	_	_	2	obj	_	_
+6	.	_	PUNCT	_	_	2	punct	_	_
+
+1	De	_	PRON	_	_	2	nsubj	_	_
+2	reste	_	VERB	_	_	0	root	_	_
+3	till	_	ADP	_	_	4	case	_	_
+4	Stockholm	_	PROPN	_	_	2	obl	_	_
+5	förra	_	ADJ	_	_	6	amod	_	_
+6	veckan	_	NOUN	_	_	2	obl	_	_
+7	.	_	PUNCT	_	_	2	punct	_	_
+
+1	Läraren	_	NOUN	_	_	2	nsubj	_	_
+2	förklarade	_	VERB	_	_	0	root	_	_
+3	reglerna	_	NOUN	_	_	2	obj	_	_
+4	för	_	ADP	_	_	5	case	_	_
+5	eleverna	_	NOUN	_	_	3	nmod	_	_
+6	.	_	PUNCT	_	_	2	punct	_	_
+
+1	Det	_	PRON	_	_	2	nsubj	_	_
+2	regnar	_	VERB	_	_	0	root	_	_
+3	mycket	_	ADV	_	_	2	advmod	_	_
+4	i	_	ADP	_	_	5	case	_	_
+5	Sverige	_	PROPN	_	_	2	obl	_	_
+6	.	_	PUNCT	_	_	2	punct	_	_
+
+1	Hon	_	PRON	_	_	3	nsubj	_	_
+2	har	_	AUX	_	_	3	aux	_	_
+3	arbetat	_	VERB	_	_	0	root	_	_
+4	här	_	ADV	_	_	3	advmod	_	_
+5	i	_	ADP	_	_	7	case	_	_
+6	tre	_	NUM	_	_	7	nummod	_	_
+7	år	_	NOUN	_	_	3	obl	_	_
+8	.	_	PUNCT	_	_	3	punct	_	_
+
+1	Mannen	_	NOUN	_	_	2	nsubj	_	_
+2	köpte	_	VERB	_	_	0	root	_	_
+3	en	_	DET	_	_	5	det	_	_
+4	ny	_	ADJ	_	_	5	amod	_	_
+5	bil	_	NOUN	_	_	2	obj	_	_
+6	igår	_	NOUN	_	_	2	obl	_	_
+7	.	_	PUNCT	_	_	2	punct	_	_
+
+1	Polisen	_	NOUN	_	_	2	nsubj	_	_
+2	hittade	_	VERB	_	_	0	root	_	_
+3	bilen	_	NOUN	_	_	2	obj	_	_
+4	nära	_	ADP	_	_	5	case	_	_
+5	skogen	_	NOUN	_	_	2	obl	_	_
+6	.	_	PUNCT	_	_	2	punct	_	_
+
+1	Alla	_	DET	_	_	2	det	_	_
+2	barn	_	NOUN	_	_	3	nsubj	_	_
+3	behöver	_	VERB	_	_	0	root	_	_
+4	mat	_	NOUN	_	_	3	obj	_	_
+5	och	_	CCONJ	_	_	6	cc	_	_
+6	kärlek	_	NOUN	_	_	4	conj	_	_
+7	.	_	PUNCT	_	_	3	punct	_	_
+
